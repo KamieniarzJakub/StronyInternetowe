@@ -1,0 +1,129 @@
+@model TournamentSystem.ViewModels.TournamentDetailsViewModel
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<ApplicationUser> UserManager // Wstrzyknij UserManager
+
+@{
+    string currentUserId = null;
+    if (User.Identity.IsAuthenticated)
+    {
+        currentUserId = UserManager.GetUserId(User);
+    }
+    string message = null;
+}
+
+<div class="bracket-container">
+    @foreach (var round in Model.Matches.GroupBy(m => m.Round).OrderBy(g => g.Key).ToList())
+    {
+        <div class="bracket-round">
+            <h4>Runda @round.Key</h4>
+            @foreach (var match in round)
+            {
+                @if (round.Key != 1 || match.Player1?.Id != null)
+                {
+                    <div class="bracket-match">
+                        @* Wyświetlanie gracza 1 i wskaźnik głosu/zwycięzcy *@
+                        <div class="player @((match.WinnerId != null && match.WinnerId == match.Player1Id) ? "winner" :
+                                            (currentUserId != null && match.WinnerId == null && // Tylko jeśli nie ma ustalonego zwycięzcy
+                                             ((currentUserId == match.Player1Id && match.Player1ReportedWinnerId == match.Player1Id) ||
+                                              (currentUserId == match.Player2Id && match.Player2ReportedWinnerId == match.Player1Id))
+                                             ? "your-vote" : ""))">
+                            @match.Player1?.UserName
+                        </div>
+                        @if (match.Player2?.Id != null)
+                        {
+                            <div class="vs">vs</div>
+                            @* Wyświetlanie gracza 2 i wskaźnik głosu/zwycięzcy *@
+                            <div class="player @((match.WinnerId != null && match.WinnerId == match.Player2Id) ? "winner" :
+                                                (currentUserId != null && match.WinnerId == null && // Tylko jeśli nie ma ustalonego zwycięzcy
+                                                 ((currentUserId == match.Player1Id && match.Player1ReportedWinnerId == match.Player2Id) ||
+                                                  (currentUserId == match.Player2Id && match.Player2ReportedWinnerId == match.Player2Id))
+                                                 ? "your-vote" : ""))">
+                                @match.Player2?.UserName
+                            </div>
+                        }
+
+                        @if (!string.IsNullOrEmpty(match.DiscrepancyMessage))
+                        {
+                            message = @match.DiscrepancyMessage;
+                        }
+
+                        @* Formularz zgłaszania wyników *@
+                        @if (User.Identity.IsAuthenticated &&
+                            (currentUserId == match.Player1?.Id || currentUserId == match.Player2?.Id) &&
+                            match.WinnerId == null && // Formularz widoczny tylko, jeśli mecz nie ma jeszcze zwycięzcy
+                            match.Player1Id != null && match.Player2Id != null)
+                        {
+                            <form asp-action="ReportResult" method="post">
+                                <input type="hidden" name="matchId" value="@match.Id" />
+                                <label>Wybierz zwycięzcę:</label>
+                                <select name="winnerId" class="form-control">
+                                    <option value="@match.Player1Id" selected="@(((currentUserId == match.Player1Id && match.Player1ReportedWinnerId == match.Player1Id) || (currentUserId == match.Player2Id && match.Player2ReportedWinnerId == match.Player1Id)))">@match.Player1?.UserName</option>
+                                    <option value="@match.Player2Id" selected="@(((currentUserId == match.Player1Id && match.Player1ReportedWinnerId == match.Player2Id) || (currentUserId == match.Player2Id && match.Player2ReportedWinnerId == match.Player2Id)))">@match.Player2?.UserName</option>
+                                </select>
+                                <button type="submit" class="btn btn-sm btn-primary mt-1">Zgłoś wynik</button>
+                            </form>
+                        }
+                    </div>
+                }
+            }
+        </div>
+    }
+</div>
+@if(message!=null)
+{
+    <div class="alert alert-warning match-status-message">
+        <strong>Status meczu: @message</strong> 
+    </div>
+}
+
+@* Wszelkie style CSS dla drabinki powinny być tutaj lub w pliku globalnym *@
+<style>
+    .bracket-container {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        padding: 20px;
+    }
+    .bracket-round {
+        flex: 0 0 auto;
+        min-width: 200px;
+    }
+    .bracket-round h4 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .bracket-match {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        background: #f9f9f9;
+    }
+    .player {
+        padding: 5px;
+    }
+    .winner {
+        font-weight: bold;
+        background-color: #d4edda; /* Jasnozielony dla zwycięzcy */
+    }
+    .your-vote {
+        background-color: #add8e6; /* Jasnoniebieski dla Twojego głosu */
+        border: 1px solid #6cb6d1;
+        font-weight: bold;
+    }
+    .vs {
+        text-align: center;
+        margin: 5px 0;
+        font-style: italic;
+    }
+    .match-status-message {
+        margin-top: 10px;
+        padding: 8px;
+        border-radius: 5px;
+        font-size: 0.9em;
+        background-color: #fff3cd;
+        border: 1px solid #ffeeba;
+        color: #856404;
+        font-weight: bold;
+    }
+</style>

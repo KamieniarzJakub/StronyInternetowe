@@ -1,12 +1,13 @@
 @model TournamentSystem.ViewModels.TournamentDetailsViewModel
 @using Microsoft.AspNetCore.Identity
-@inject UserManager<ApplicationUser> UserManager
+@inject UserManager<ApplicationUser> UserManager // Inject UserManager
 
 @{
     var returnUrl = Context.Request.Path + Context.Request.QueryString;
 }
 
 @functions {
+    // This GetEmbedMapUrl logic is from your working version
     public string GetEmbedMapUrl(string url)
     {
         if (string.IsNullOrEmpty(url))
@@ -26,10 +27,15 @@
 }
 
 @{
-    ViewData["Title"] = "Tournament Details";
+    ViewData["Title"] = "Szczegóły turnieju"; // Changed from "Tournament Details"
     var embedMapUrl = GetEmbedMapUrl(Model.Tournament.Location);
+
+    // Get the organizer's username to display
+    var organizerUser = await UserManager.FindByIdAsync(Model.Tournament.OrganizerId);
+    var organizerUserName = organizerUser?.UserName ?? "Nieznany organizator";
 }
 
+@* TempData Messages *@
 @if (TempData["ErrorMessage"] != null)
 {
     <div class="alert alert-danger">
@@ -46,47 +52,60 @@
 
 <h2>@Model.Tournament.Name</h2>
 
-<p><strong>Discipline:</strong> @Model.Tournament.Discipline</p>
-<p><strong>Date:</strong> @Model.Tournament.Date</p>
-<p><strong>Application deadline:</strong> @(Model.Tournament.ApplicationDeadline)</p>
-<p><strong>Location:</strong> @Model.Tournament.Location</p>
-@if (!string.IsNullOrWhiteSpace(embedMapUrl))
-{
-    <div class="map-responsive" style="max-width: 100%; height: 450px;">
-        <iframe 
-            src="@embedMapUrl"
-            width="100%" 
-            height="450" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
-}
-else
-{
-    <p>Brak mapy do wyświetlenia</p>
-}
-<p><strong>Max Participants:</strong> @Model.Tournament.MaxParticipants</p>
-<p><strong>Free spots:</strong> @Model.FreeSpots</p>
-<p><strong>Organizer:</strong> @Model.Tournament.OrganizerId</p>
-@if (!string.IsNullOrWhiteSpace(Model.Tournament.SponsorLogos))
-{
-    var sponsorUrls = Model.Tournament.SponsorLogos.Split(',', StringSplitOptions.RemoveEmptyEntries);
-    <p><strong>Sponsorzy:</strong></p>
-    <div class="d-flex flex-wrap gap-2">
-        @foreach (var url in sponsorUrls)
+<div class="row">
+    @* Left Column - Tournament Information *@
+    <div class="col-md-6">
+        <p><strong>Dyscyplina:</strong> @Model.Tournament.Discipline</p>
+        <p><strong>Data:</strong> @Model.Tournament.Date.ToString("dd.MM.yyyy HH:mm")</p>
+        <p><strong>Termin zgłoszeń:</strong> @(Model.Tournament.ApplicationDeadline.ToString("dd.MM.yyyy HH:mm"))</p>
+        <p><strong>Lokalizacja:</strong> @Model.Tournament.Location</p>
+        <p><strong>Maksymalna liczba uczestników:</strong> @Model.Tournament.MaxParticipants</p>
+        <p><strong>Wolne miejsca:</strong> @Model.FreeSpots</p>
+        <p><strong>Organizator:</strong> @organizerUserName</p> @* Display organizer's username *@
+
+        @if (!string.IsNullOrWhiteSpace(Model.Tournament.SponsorLogos))
         {
-            <img src="@url.Trim()" alt="Sponsor logo" style="max-height: 60px;" />
+            var sponsorUrls = Model.Tournament.SponsorLogos.Split(',', StringSplitOptions.RemoveEmptyEntries);
+            <p><strong>Sponsorzy:</strong></p>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                @foreach (var url in sponsorUrls)
+                {
+                    <img src="@url.Trim()" alt="Logo sponsora" style="max-height: 60px; border: 1px solid #ddd; padding: 5px; background-color: white;" />
+                }
+            </div>
         }
     </div>
-}
 
+    @* Right Column - Map *@
+    <div class="col-md-6">
+        @if (!string.IsNullOrWhiteSpace(embedMapUrl))
+        {
+            <div class="map-responsive" style="max-width: 100%; height: 450px;">
+                <iframe 
+                    src="@embedMapUrl"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        }
+        else
+        {
+            <p>Brak mapy do wyświetlenia.</p>
+        }
+    </div>
+</div>
 
+---
+
+@* Sections below the two columns *@
 <hr />
 
-<p><strong>Status turnieju:</strong> 
+<p>
+    <strong>Status turnieju:</strong> 
     @switch(Model.Tournament.Status)
     {
         case TournamentSystem.Models.TournamentStatus.Upcoming:
@@ -101,34 +120,29 @@ else
     }
 </p>
 
-
-<h4>Participants (@Model.Participants.Count)</h4>
-<ul>
+<h4>Uczestnicy (@Model.Participants.Count)</h4>
+<ul class="list-group mb-3">
     @foreach (var p in Model.Participants.OrderBy(p => p.Ranking))
     {
-        <li>@p.User.UserName - Licencja: @p.LicenseNumber, Ranking: @p.Ranking</li>
+        <li class="list-group-item">@p.User.UserName - Licencja: @p.LicenseNumber, Ranking: @p.Ranking</li>
     }
 </ul>
 
-@if (User.Identity.IsAuthenticated && Model.IsOrganizer)
-{
-    
-}
-
+@* Action Buttons (below participants) *@
 @if (Model.Tournament.Status == TournamentSystem.Models.TournamentStatus.Upcoming)
 {
     if (User.Identity.IsAuthenticated)
     {
         if (Model.IsUserParticipant)
         {
-            <form asp-action="Withdraw" method="post">
+            <form asp-action="Withdraw" method="post" class="d-inline-block me-2">
                 <input type="hidden" name="tournamentId" value="@Model.Tournament.Id" />
                 <button type="submit" class="btn btn-danger">Zrezygnuj z udziału</button>
             </form>
         }
         else if (Model.FreeSpots > 0)
         {
-            <a class="btn btn-success" asp-action="Apply" asp-route-id="@Model.Tournament.Id">Zapisz się</a>
+            <a class="btn btn-success me-2" asp-action="Apply" asp-route-id="@Model.Tournament.Id">Zapisz się</a>
         }
         else
         {
@@ -137,8 +151,8 @@ else
 
         if (Model.IsOrganizer)
         {
-            <a asp-action="Edit" asp-route-id="@Model.Tournament.Id" class="btn btn-warning">Edytuj turniej</a>
-            <form asp-action="GenerateLadder" asp-route-id="@Model.Tournament.Id" method="post">
+            <a asp-action="Edit" asp-route-id="@Model.Tournament.Id" class="btn btn-warning me-2">Edytuj turniej</a>
+            <form asp-action="GenerateLadder" asp-route-id="@Model.Tournament.Id" method="post" class="d-inline-block">
                 <button type="submit" class="btn btn-primary">
                     Rozpocznij turniej i wygeneruj drabinkę
                 </button>
@@ -154,16 +168,16 @@ else
         asp-route-returnUrl="@returnUrl">
         Zaloguj się, aby zapisać się
         </a>
-
     }
 }
 
+---
 
 <h3>Drabinka turnieju</h3>
 
 @if (Model.Tournament.Status == TournamentSystem.Models.TournamentStatus.Active || Model.Tournament.Status == TournamentSystem.Models.TournamentStatus.Finished)
 {
-    if (Model.Participants.Count > 2)
+    if (Model.Participants.Count >= 2)
     {
         <a class="btn btn-success" href="/Tournament/Bracket/@Model.Tournament.Id">Pokaż drabinkę</a>
     }
@@ -177,11 +191,41 @@ else
     <p>Drabinka będzie dostępna po rozpoczęciu turnieju.</p>
 }
 
-
 <a asp-action="Index"
-   asp-route-search="@ViewData["CurrentFilter"]"
-   asp-route-sort="@ViewData["CurrentSort"]"
-   asp-route-page="@ViewData["CurrentPage"]"
-   class="btn btn-primary">
-   ← Powrót do listy
+    asp-route-search="@ViewData["CurrentFilter"]"
+    asp-route-sort="@ViewData["CurrentSort"]"
+    asp-route-page="@ViewData["CurrentPage"]"
+    class="btn btn-primary mt-3">
+    ← Powrót do listy
 </a>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.0/signalr.min.js"></script>
+    <script>
+        const tournamentId = @Model.Tournament.Id;
+
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/matchHub") // Use the same SignalR Hub
+            .build();
+
+        // Listen for the "tournamentStatusUpdated" event
+        connection.on("tournamentStatusUpdated", function (tid) {
+            if (tid === tournamentId) {
+                console.log("Tournament status updated – refreshing details view.");
+                location.reload(); // Refresh the entire tournament details page
+            }
+        });
+
+        connection.start().then(function () {
+            // Join the SignalR group for this specific tournament
+            connection.invoke("JoinBracketGroup", tournamentId.toString()); 
+        }).catch(function (err) {
+            console.error(err.toString());
+        });
+
+        // Leave the SignalR group when the user leaves the page
+        window.addEventListener("beforeunload", function () {
+            connection.invoke("LeaveBracketGroup", tournamentId.toString());
+        });
+    </script>
+}

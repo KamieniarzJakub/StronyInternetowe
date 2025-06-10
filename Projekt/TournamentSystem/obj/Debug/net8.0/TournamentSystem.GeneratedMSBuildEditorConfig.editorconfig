@@ -106,6 +106,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cm5hbWVudFxNeVRvdXJuYW1lbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/kamie/Projekty/Aplikacje internetowe/Projekt/TournamentSystem/Views/Tournament/_BracketContent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cm5hbWVudFxfQnJhY2tldENvbnRlbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kamie/Projekty/Aplikacje internetowe/Projekt/TournamentSystem/Views/Tournament/_MatchTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cm5hbWVudFxfTWF0Y2hUYWJsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/kamie/Projekty/Aplikacje internetowe/Projekt/TournamentSystem/Views/Tournament/_TournamentTable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cm5hbWVudFxfVG91cm5hbWVudFRhYmxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

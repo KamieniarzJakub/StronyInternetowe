@@ -1,128 +1,84 @@
 @model TournamentSystem.ViewModels.TournamentDetailsViewModel
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<ApplicationUser> UserManager
 
 @{
     ViewData["Title"] = "Drabinka turnieju";
-    var rounds = Model.Matches
-        .GroupBy(m => m.Round)
-        .OrderBy(g => g.Key)
-        .ToList();
-}
-
-@if (TempData["ErrorMessage"] != null)
-{
-    <div class="alert alert-warning">@TempData["ErrorMessage"]</div>
 }
 
 
-<h2>Drabinka turnieju: @Model.Tournament.Name</h2>
+@* Nowy kontener dla głównej treści drabinki, który otrzyma dynamiczny margines *@
+<div id="mainContent">
+    <h2>Drabinka turnieju: @Model.Tournament.Name</h2>
 
-<div class="bracket-container">
-    @foreach (var round in rounds)
-    {
-        <div class="bracket-round">
-            <h4>Runda @round.Key</h4>
-            @foreach (var match in round)
-            {
-                @if(round.Key!=1 || match.Player1?.Id!=null)
-                {
-                    <div class="bracket-match">
-                    
-                        <div class="player @((match.WinnerId!=null && match.WinnerId == match.Player1Id) ? "winner" : "")">
-                            @match.Player1?.UserName
-                        </div>
-                        @if (match.Player2?.Id!=null)
-                        {
-                            <div class="vs">vs</div>
-                            <div class="player @((match.WinnerId!=null && match.WinnerId == match.Player2Id) ? "winner" : "")">
-                                @match.Player2?.UserName
-                            </div>
-                        }
-                    </div>
-                }
-                    
-                
-                @if (User.Identity.IsAuthenticated &&
-                    (User.Identity.Name == match.Player1?.UserName || User.Identity.Name == match.Player2?.UserName) &&
-                    match.WinnerId == null &&
-                    match.Player1Id != null && match.Player2Id != null)
-                {
-                    <form asp-action="ReportResult" method="post">
-                        <input type="hidden" name="matchId" value="@match.Id" />
-                        <label>Wybierz zwycięzcę:</label>
-                        <select name="winnerId" class="form-control">
-                            <option value="@match.Player1Id">@match.Player1?.UserName</option>
-                            <option value="@match.Player2Id">@match.Player2?.UserName</option>
-                        </select>
-                        <button type="submit" class="btn btn-sm btn-primary mt-1">Zgłoś wynik</button>
-                    </form>
-                }
-
-            }
-        </div>
-    }
+    @* Placeholder dla zawartości drabinki, która będzie odświeżana dynamicznie *@
+    <div id="bracketContentPlaceholder">
+        @await Html.PartialAsync("_BracketContent", Model)
+    </div>
 </div>
 
-<style>
-.bracket-container {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    padding: 20px;
-}
-.bracket-round {
-    flex: 0 0 auto;
-    min-width: 200px;
-}
-.bracket-round h4 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-.bracket-match {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    background: #f9f9f9;
-}
-.player {
-    padding: 5px;
-}
-.winner {
-    font-weight: bold;
-    background-color: #d4edda;
-}
-.vs {
-    text-align: center;
-    margin: 5px 0;
-    font-style: italic;
-}
-</style>
-
 <a asp-action="Details" asp-route-id="@Model.Tournament.Id" class="btn btn-secondary mt-3">← Powrót do turnieju</a>
-
 
 @section Scripts {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.0/signalr.min.js"></script>
     <script>
         const tournamentId = @Model.Tournament.Id;
+        const bracketContentPlaceholder = document.getElementById('bracketContentPlaceholder');
+        const mainContent = document.getElementById('mainContent'); // Pobierz nowy element mainContent
+        const fixedAlerts = document.querySelector('.fixed-top-alerts'); // Pobierz kontener z alertami
+
+        // Funkcja do dynamicznego dostosowywania marginesu górnego głównej treści
+        function adjustMainContentMargin() {
+            if (fixedAlerts && mainContent) {
+                // Oblicz rzeczywistą wysokość kontenera z alertami
+                const alertsHeight = fixedAlerts.offsetHeight;
+                // Ustaw margines górny dla głównej treści, dodając trochę dodatkowego odstępu
+                // Tak, aby treść nie zakrywała pasków nawigacji i alertów
+                mainContent.style.marginTop = `${alertsHeight + 20}px`; 
+            }
+        }
 
         const connection = new signalR.HubConnectionBuilder()
             .withUrl("/matchHub")
             .build();
 
-        connection.on("bracketUpdated", function (tid) {
+        connection.on("bracketUpdated", async function (tid) {
             if (tid === tournamentId) {
-                console.log("Drabinka zaktualizowana – odświeżam widok.");
-                location.reload(); // lub AJAX, jeśli chcesz dynamicznie wstrzykiwać
+                console.log("Drabinka zaktualizowana – pobieram nową zawartość.");
+                try {
+                    // Wykonaj zapytanie AJAX, aby pobrać zaktualizowany widok częściowy drabinki
+                    const response = await fetch(`/Tournament/Bracket/${tournamentId}?isPartial=true`);
+                    if (response.ok) {
+                        const html = await response.text();
+                        bracketContentPlaceholder.innerHTML = html; // Zastąp zawartość placeholderu
+                        adjustMainContentMargin(); // Ponownie dostosuj margines po załadowaniu nowej treści
+                    } else {
+                        console.error('Błąd podczas pobierania aktualizacji drabinki:', response.statusText);
+                        // Fallback na pełne odświeżenie strony w przypadku błędu
+                        location.reload(); 
+                    }
+                } catch (error) {
+                    console.error('Błąd sieci podczas pobierania aktualizacji drabinki:', error);
+                    // Fallback na pełne odświeżenie strony w przypadku błędu sieci
+                    location.reload(); 
+                }
             }
         });
 
         connection.start().then(function () {
-            connection.invoke("JoinBracketGroup", tournamentId);
+            connection.invoke("JoinBracketGroup", tournamentId.toString());
+            adjustMainContentMargin(); // Dostosuj margines po uruchomieniu połączenia
+        }).catch(function (err) {
+            console.error(err.toString());
         });
 
         window.addEventListener("beforeunload", function () {
-            connection.invoke("LeaveBracketGroup", tournamentId);
+            connection.invoke("LeaveBracketGroup", tournamentId.toString());
         });
+
+        // Dostosuj margines po załadowaniu strony oraz przy zmianie rozmiaru okna
+        window.addEventListener('load', adjustMainContentMargin);
+        window.addEventListener('resize', adjustMainContentMargin);
     </script>
 }
+

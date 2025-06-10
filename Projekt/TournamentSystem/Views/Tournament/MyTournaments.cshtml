@@ -8,14 +8,60 @@
 
 <hr />
 
-<h3>🔜 Nadchodzące turnieje</h3>
-@Html.Partial("_TournamentTable", Model.Upcoming)
+<h3>🎮 Twoje Nadchodzące Mecze</h3>
+@if (Model.UpcomingMatches != null && Model.UpcomingMatches.Any())
+{
+    @Html.Partial("_MatchTable", Model.UpcomingMatches)
+}
+else
+{
+    <p>Brak nadchodzących meczów.</p>
+}
 
-<h3>🏁 Aktywne turnieje</h3>
-@Html.Partial("_TournamentTable", Model.Active)
+<hr />
 
-<h3>⏳ Zakończone turnieje</h3>
-@Html.Partial("_TournamentTable", Model.Past)
+<h3>🔜 Nadchodzące turnieje (Uczestnik)</h3>
+@if (Model.Upcoming != null && Model.Upcoming.Any())
+{
+    @Html.Partial("_TournamentTable", Model.Upcoming)
+}
+else
+{
+    <p>Nie jesteś zapisany do żadnych nadchodzących turniejów.</p>
+}
+
+<hr />
+
+<h3>🏁 Aktywne turnieje (Uczestnik)</h3>
+@if (Model.Active != null && Model.Active.Any())
+{
+    @Html.Partial("_TournamentTable", Model.Active)
+}
+else
+{
+    <p>Nie bierzesz udziału w żadnych aktywnych turniejach.</p>
+}
+
+<hr />
+
+<h3>⏳ Zakończone turnieje (Uczestnik)</h3>
+@if (Model.Past != null && Model.Past.Any())
+{
+    @Html.Partial("_TournamentTable", Model.Past)
+}
+else
+{
+    <p>Nie brałeś udziału w żadnych zakończonych turniejach.</p>
+}
+
+<hr />
 
 <h3>🧑‍💼 Organizowane turnieje</h3>
-@Html.Partial("_TournamentTable", Model.Organized)
+@if (Model.Organized != null && Model.Organized.Any())
+{
+    @Html.Partial("_TournamentTable", Model.Organized)
+}
+else
+{
+    <p>Nie organizujesz żadnych turniejów.</p>
+}

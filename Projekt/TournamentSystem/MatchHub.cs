@@ -1,21 +1,29 @@
 using Microsoft.AspNetCore.SignalR;
 using System.Threading.Tasks;
 
-public class MatchHub : Hub
+namespace TournamentSystem.Hubs
 {
-    public async Task JoinBracketGroup(int tournamentId)
+    public class MatchHub : Hub
     {
-        await Groups.AddToGroupAsync(Context.ConnectionId, $"tournament-{tournamentId}");
-    }
+        // Metoda do dołączania do grupy turnieju
+        public async Task JoinBracketGroup(string tournamentId)
+        {
+            await Groups.AddToGroupAsync(Context.ConnectionId, tournamentId);
+            Console.WriteLine($"Connection {Context.ConnectionId} joined group {tournamentId}");
+        }
 
-    public async Task LeaveBracketGroup(int tournamentId)
-    {
-        await Groups.RemoveFromGroupAsync(Context.ConnectionId, $"tournament-{tournamentId}");
-    }
+        // Metoda do opuszczania grupy turnieju
+        public async Task LeaveBracketGroup(string tournamentId)
+        {
+            await Groups.RemoveFromGroupAsync(Context.ConnectionId, tournamentId);
+            Console.WriteLine($"Connection {Context.ConnectionId} left group {tournamentId}");
+        }
 
-    public async Task NotifyBracketUpdated(int tournamentId)
-    {
-        await Clients.Group($"tournament-{tournamentId}")
-                     .SendAsync("bracketUpdated", tournamentId);
+        // Metoda do wysyłania aktualizacji drabinki (wywoływana z kontrolera)
+        // Klienci nasłuchują na "bracketUpdated"
+        public async Task BracketUpdated(string tournamentId)
+        {
+            await Clients.Group(tournamentId).SendAsync("bracketUpdated", tournamentId);
+        }
     }
 }

@@ -74,3 +74,4 @@ C:\Users\kamie\Projekty\Aplikacje internetowe\Projekt\TournamentSystem\bin\Debug
 C:\Users\kamie\Projekty\Aplikacje internetowe\Projekt\TournamentSystem\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\kamie\Projekty\Aplikacje internetowe\Projekt\TournamentSystem\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\kamie\Projekty\Aplikacje internetowe\Projekt\TournamentSystem\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\kamie\Projekty\Aplikacje internetowe\Projekt\TournamentSystem\obj\Debug\net8.0\TournamentSystem.sourcelink.json

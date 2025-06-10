@@ -21,6 +21,8 @@ namespace TournamentSystem.Models
 
         public string? Player1ReportedWinnerId { get; set; }
         public string? Player2ReportedWinnerId { get; set; }
+
+        public string? DiscrepancyMessage { get; set; }
     }
 
 }

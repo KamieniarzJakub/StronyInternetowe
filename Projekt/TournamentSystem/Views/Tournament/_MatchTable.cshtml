@@ -1,0 +1,45 @@
+@model List<TournamentSystem.Models.Match>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Turniej</th>
+                <th>Runda</th>
+                <th>Gracz 1</th>
+                <th>Gracz 2</th>
+                <th>Status</th>
+                <th>Akcje</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var match in Model)
+            {
+                <tr>
+                    <td>@match.Tournament.Name</td>
+                    <td>Runda @match.Round</td>
+                    <td>@match.Player1?.UserName</td>
+                    <td>@match.Player2?.UserName</td>
+                    <td>
+                        @if (match.WinnerId == null)
+                        {
+                            <span>Do rozegrania</span>
+                        }
+                        else
+                        {
+                            <span>Zakończony (@match.Winner?.UserName zwycięzca)</span>
+                        }
+                    </td>
+                    <td>
+                        <a asp-controller="Tournament" asp-action="Bracket" asp-route-id="@match.TournamentId" class="btn btn-sm btn-info">Szczegóły turnieju</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Brak meczów do wyświetlenia.</p>
+}
