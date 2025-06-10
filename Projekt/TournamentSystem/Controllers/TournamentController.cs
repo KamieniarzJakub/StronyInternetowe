@@ -793,12 +793,12 @@ namespace TournamentSystem.Controllers
                     _context.ResultSubmissions.RemoveRange(submissions);
                     await _context.SaveChangesAsync();
 
-                    TempData["Warning"] = "Wyniki są sprzeczne i zostały wycofane. Proszę ponownie wprowadzić zgodny wynik.";
+                    TempData["Warning"] = "Wyniki sprzeczne - głosy wycofane.";
                 }
             }
             else
             {
-                TempData["Info"] = "Wynik został zapisany, oczekuje na potwierdzenie drugiego gracza.";
+                TempData["Info"] = "Jeden z graczy zagłosował";
             }
 
             return RedirectToAction("Matches", new { id = match.TournamentId });
@@ -1013,7 +1013,7 @@ namespace TournamentSystem.Controllers
                 {
                     // Wyniki są niezgodne - ustaw komunikat o niezgodności i zresetuj głosy
                     match.WinnerId = null; // Upewnij się, że zwycięzca nie jest ustawiony
-                    match.DiscrepancyMessage = $"Zgłoszone wyniki są niezgodne! Zgłoszenia zostały zresetowane. Zagłosuj ponownie.";
+                    match.DiscrepancyMessage = $"Sprzeczność - głosy wycofane";
                     
                     // Zresetuj zgłoszenia obu graczy, aby mogli zagłosować ponownie
                     match.Player1ReportedWinnerId = null;
@@ -1024,7 +1024,7 @@ namespace TournamentSystem.Controllers
             {
                 // Tylko jeden gracz zgłosił wynik, czekamy na drugiego
                 // Ustaw komunikat o statusie meczu, aby był widoczny dla obu graczy
-                match.DiscrepancyMessage = "Czekamy na potwierdzenie wyniku od drugiego gracza."; 
+                match.DiscrepancyMessage = "Oczekiwanie na drugi głos"; 
             }
 
             await _context.SaveChangesAsync();

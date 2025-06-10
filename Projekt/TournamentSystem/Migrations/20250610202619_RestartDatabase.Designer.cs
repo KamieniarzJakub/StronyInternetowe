@@ -11,8 +11,8 @@ using TournamentSystem.Data;
 namespace TournamentSystem.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250605133215_MinParticipants")]
-    partial class MinParticipants
+    [Migration("20250610202619_RestartDatabase")]
+    partial class RestartDatabase
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -226,21 +226,29 @@ namespace TournamentSystem.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<bool>("IsResultConfirmedByBoth")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("DiscrepancyMessage")
+                        .HasColumnType("TEXT");
 
-                    b.Property<int>("Player1Id")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Player1Id")
+                        .HasColumnType("TEXT");
 
-                    b.Property<int>("Player2Id")
+                    b.Property<string>("Player1ReportedWinnerId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Player2Id")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Player2ReportedWinnerId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Round")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("TournamentId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("WinnerId")
-                        .IsRequired()
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("WinnerId")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
@@ -291,6 +299,35 @@ namespace TournamentSystem.Migrations
                     b.ToTable("Participants");
                 });
 
+            modelBuilder.Entity("TournamentSystem.Models.ResultSubmission", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("MatchId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("SubmittedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("WinnerId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MatchId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("ResultSubmissions");
+                });
+
             modelBuilder.Entity("TournamentSystem.Models.Tournament", b =>
                 {
                     b.Property<int>("Id")
@@ -326,6 +363,9 @@ namespace TournamentSystem.Migrations
 
                     b.Property<string>("SponsorLogos")
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Winner")
                         .HasColumnType("TEXT");
@@ -390,29 +430,26 @@ namespace TournamentSystem.Migrations
 
             modelBuilder.Entity("TournamentSystem.Models.Match", b =>
                 {
-                    b.HasOne("TournamentSystem.Models.Participant", "Player1")
+                    b.HasOne("TournamentSystem.Models.ApplicationUser", "Player1")
                         .WithMany()
                         .HasForeignKey("Player1Id")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
-                    b.HasOne("TournamentSystem.Models.Participant", "Player2")
+                    b.HasOne("TournamentSystem.Models.ApplicationUser", "Player2")
                         .WithMany()
                         .HasForeignKey("Player2Id")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("TournamentSystem.Models.Tournament", "Tournament")
-                        .WithMany()
+                        .WithMany("Matches")
                         .HasForeignKey("TournamentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TournamentSystem.Models.Participant", "Winner")
+                    b.HasOne("TournamentSystem.Models.ApplicationUser", "Winner")
                         .WithMany()
                         .HasForeignKey("WinnerId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Player1");
 
@@ -442,6 +479,25 @@ namespace TournamentSystem.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("TournamentSystem.Models.ResultSubmission", b =>
+                {
+                    b.HasOne("TournamentSystem.Models.Match", "Match")
+                        .WithMany()
+                        .HasForeignKey("MatchId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TournamentSystem.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Match");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("TournamentSystem.Models.Tournament", b =>
                 {
                     b.HasOne("TournamentSystem.Models.ApplicationUser", null)
@@ -458,6 +514,8 @@ namespace TournamentSystem.Migrations
 
             modelBuilder.Entity("TournamentSystem.Models.Tournament", b =>
                 {
+                    b.Navigation("Matches");
+
                     b.Navigation("Participants");
                 });
 #pragma warning restore 612, 618

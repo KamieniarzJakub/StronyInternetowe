@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace TournamentSystem.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class RestartDatabase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -167,12 +167,13 @@ namespace TournamentSystem.Migrations
                     Name = table.Column<string>(type: "TEXT", nullable: false),
                     Discipline = table.Column<string>(type: "TEXT", nullable: false),
                     Date = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    ApplicationDeadline = table.Column<DateTime>(type: "TEXT", nullable: true),
+                    ApplicationDeadline = table.Column<DateTime>(type: "TEXT", nullable: false),
                     Location = table.Column<string>(type: "TEXT", nullable: false),
-                    GoogleMapsUrl = table.Column<string>(type: "TEXT", nullable: false),
                     MaxParticipants = table.Column<int>(type: "INTEGER", nullable: false),
-                    SponsorLogos = table.Column<string>(type: "TEXT", nullable: false),
+                    SponsorLogos = table.Column<string>(type: "TEXT", nullable: true),
                     OrganizerId = table.Column<string>(type: "TEXT", nullable: true),
+                    Winner = table.Column<string>(type: "TEXT", nullable: true),
+                    Status = table.Column<int>(type: "INTEGER", nullable: false),
                     ApplicationUserId = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
@@ -183,6 +184,50 @@ namespace TournamentSystem.Migrations
                         column: x => x.ApplicationUserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Matches",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    TournamentId = table.Column<int>(type: "INTEGER", nullable: false),
+                    Round = table.Column<int>(type: "INTEGER", nullable: false),
+                    Player1Id = table.Column<string>(type: "TEXT", nullable: true),
+                    Player2Id = table.Column<string>(type: "TEXT", nullable: true),
+                    WinnerId = table.Column<string>(type: "TEXT", nullable: true),
+                    Player1ReportedWinnerId = table.Column<string>(type: "TEXT", nullable: true),
+                    Player2ReportedWinnerId = table.Column<string>(type: "TEXT", nullable: true),
+                    DiscrepancyMessage = table.Column<string>(type: "TEXT", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Matches", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Matches_AspNetUsers_Player1Id",
+                        column: x => x.Player1Id,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Matches_AspNetUsers_Player2Id",
+                        column: x => x.Player2Id,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Matches_AspNetUsers_WinnerId",
+                        column: x => x.WinnerId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Matches_Tournaments_TournamentId",
+                        column: x => x.TournamentId,
+                        principalTable: "Tournaments",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -214,42 +259,29 @@ namespace TournamentSystem.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Matches",
+                name: "ResultSubmissions",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    TournamentId = table.Column<int>(type: "INTEGER", nullable: false),
-                    Player1Id = table.Column<int>(type: "INTEGER", nullable: false),
-                    Player2Id = table.Column<int>(type: "INTEGER", nullable: false),
-                    WinnerId = table.Column<int>(type: "INTEGER", nullable: false),
-                    IsResultConfirmedByBoth = table.Column<bool>(type: "INTEGER", nullable: false)
+                    MatchId = table.Column<int>(type: "INTEGER", nullable: false),
+                    UserId = table.Column<string>(type: "TEXT", nullable: false),
+                    WinnerId = table.Column<string>(type: "TEXT", nullable: false),
+                    SubmittedAt = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Matches", x => x.Id);
+                    table.PrimaryKey("PK_ResultSubmissions", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Matches_Participants_Player1Id",
-                        column: x => x.Player1Id,
-                        principalTable: "Participants",
+                        name: "FK_ResultSubmissions_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Matches_Participants_Player2Id",
-                        column: x => x.Player2Id,
-                        principalTable: "Participants",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Matches_Participants_WinnerId",
-                        column: x => x.WinnerId,
-                        principalTable: "Participants",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Matches_Tournaments_TournamentId",
-                        column: x => x.TournamentId,
-                        principalTable: "Tournaments",
+                        name: "FK_ResultSubmissions_Matches_MatchId",
+                        column: x => x.MatchId,
+                        principalTable: "Matches",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -334,6 +366,16 @@ namespace TournamentSystem.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_ResultSubmissions_MatchId",
+                table: "ResultSubmissions",
+                column: "MatchId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ResultSubmissions_UserId",
+                table: "ResultSubmissions",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Tournaments_ApplicationUserId",
                 table: "Tournaments",
                 column: "ApplicationUserId");
@@ -358,13 +400,16 @@ namespace TournamentSystem.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "Matches");
+                name: "Participants");
+
+            migrationBuilder.DropTable(
+                name: "ResultSubmissions");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
-                name: "Participants");
+                name: "Matches");
 
             migrationBuilder.DropTable(
                 name: "Tournaments");

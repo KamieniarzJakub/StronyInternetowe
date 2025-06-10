@@ -50,11 +50,12 @@
     </div>
 }
 
-<h2>@Model.Tournament.Name</h2>
+
 
 <div class="row">
     @* Left Column - Tournament Information *@
     <div class="col-md-6">
+        <h2 style="margin-top:25px;">@Model.Tournament.Name</h2>
         <p><strong>Dyscyplina:</strong> @Model.Tournament.Discipline</p>
         <p><strong>Data:</strong> @Model.Tournament.Date.ToString("dd.MM.yyyy HH:mm")</p>
         <p><strong>Termin zgłoszeń:</strong> @(Model.Tournament.ApplicationDeadline.ToString("dd.MM.yyyy HH:mm"))</p>
@@ -74,6 +75,21 @@
                 }
             </div>
         }
+        <p>
+            <strong>Status turnieju:</strong> 
+            @switch(Model.Tournament.Status)
+            {
+                case TournamentSystem.Models.TournamentStatus.Upcoming:
+                    @:Nadchodzący
+                    break;
+                case TournamentSystem.Models.TournamentStatus.Active:
+                    @:Aktywny
+                    break;
+                case TournamentSystem.Models.TournamentStatus.Finished:
+                    @:Zakończony
+                    break;
+            }
+        </p>
     </div>
 
     @* Right Column - Map *@
@@ -99,28 +115,10 @@
     </div>
 </div>
 
----
-
 @* Sections below the two columns *@
 <hr />
 
-<p>
-    <strong>Status turnieju:</strong> 
-    @switch(Model.Tournament.Status)
-    {
-        case TournamentSystem.Models.TournamentStatus.Upcoming:
-            @:Nadchodzący
-            break;
-        case TournamentSystem.Models.TournamentStatus.Active:
-            @:Aktywny
-            break;
-        case TournamentSystem.Models.TournamentStatus.Finished:
-            @:Zakończony
-            break;
-    }
-</p>
-
-<h4>Uczestnicy (@Model.Participants.Count)</h4>
+<h4 style="margin-top:50px;">Uczestnicy (@Model.Participants.Count)</h4>
 <ul class="list-group mb-3">
     @foreach (var p in Model.Participants.OrderBy(p => p.Ranking))
     {
@@ -171,15 +169,18 @@
     }
 }
 
----
-
-<h3>Drabinka turnieju</h3>
+<h3 style="margin-top:25px;">Drabinka turnieju</h3>
 
 @if (Model.Tournament.Status == TournamentSystem.Models.TournamentStatus.Active || Model.Tournament.Status == TournamentSystem.Models.TournamentStatus.Finished)
 {
     if (Model.Participants.Count >= 2)
     {
-        <a class="btn btn-success" href="/Tournament/Bracket/@Model.Tournament.Id">Pokaż drabinkę</a>
+        <a class="btn btn-success"
+            asp-controller="Tournament"
+            asp-action="Bracket"
+            asp-route-id="@Model.Tournament.Id">
+            Pokaż drabinkę
+        </a>
     }
     else
     {
@@ -190,7 +191,7 @@ else
 {
     <p>Drabinka będzie dostępna po rozpoczęciu turnieju.</p>
 }
-
+<br/>
 <a asp-action="Index"
     asp-route-search="@ViewData["CurrentFilter"]"
     asp-route-sort="@ViewData["CurrentSort"]"

@@ -8,7 +8,6 @@
     {
         currentUserId = UserManager.GetUserId(User);
     }
-    string message = null;
 }
 
 <div class="bracket-container">
@@ -42,11 +41,6 @@
                             </div>
                         }
 
-                        @if (!string.IsNullOrEmpty(match.DiscrepancyMessage))
-                        {
-                            message = @match.DiscrepancyMessage;
-                        }
-
                         @* Formularz zgłaszania wyników *@
                         @if (User.Identity.IsAuthenticated &&
                             (currentUserId == match.Player1?.Id || currentUserId == match.Player2?.Id) &&
@@ -62,6 +56,13 @@
                                 </select>
                                 <button type="submit" class="btn btn-sm btn-primary mt-1">Zgłoś wynik</button>
                             </form>
+
+                            @if (!string.IsNullOrEmpty(match.DiscrepancyMessage))
+                            {
+                                <div class="alert alert-warning match-status-message">
+                                    <strong>Status meczu:<br/> @match.DiscrepancyMessage</strong> 
+                                </div>
+                            }
                         }
                     </div>
                 }
@@ -69,12 +70,6 @@
         </div>
     }
 </div>
-@if(message!=null)
-{
-    <div class="alert alert-warning match-status-message">
-        <strong>Status meczu: @message</strong> 
-    </div>
-}
 
 @* Wszelkie style CSS dla drabinki powinny być tutaj lub w pliku globalnym *@
 <style>
