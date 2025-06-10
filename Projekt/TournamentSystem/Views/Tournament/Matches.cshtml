@@ -1,0 +1,70 @@
+@model TournamentSystem.ViewModels.MatchesViewModel
+
+<h2>@Model.Tournament.Name - Drabinka turnieju</h2>
+
+@if (!Model.MatchesByRound.Any())
+{
+    <p>Drabinka jeszcze nie została wygenerowana.</p>
+}
+else
+{
+    foreach (var roundGroup in Model.MatchesByRound)
+    {
+        <h3>Runda @roundGroup.Key</h3>
+        <div class="round-container">
+            @foreach (var match in roundGroup)
+            {
+                <div class="match-card">
+                    <div>
+                        <strong>@(match.Player1?.UserName ?? "Wolny los")</strong>
+                        vs
+                        <strong>@(match.Player2?.UserName ?? "Wolny los")</strong>
+                    </div>
+                    <div>
+                        @if (!string.IsNullOrEmpty(match.WinnerId))
+                        {
+                            <span>
+                                Zwycięzca: @((match.Player1Id == match.WinnerId) ? match.Player1?.UserName : match.Player2?.UserName)
+                            </span>
+                        }
+                        else if (Model.CurrentUserId == match.Player1Id || Model.CurrentUserId == match.Player2Id)
+                        {
+                            <form asp-action="SubmitMatchResult" method="post">
+                                <input type="hidden" name="matchId" value="@match.Id" />
+                                <select name="winnerId" required>
+                                    <option value="">Wybierz zwycięzcę</option>
+                                    <option value="@match.Player1Id">@match.Player1?.UserName</option>
+                                    @if (!string.IsNullOrEmpty(match.Player2Id))
+                                    {
+                                        <option value="@match.Player2Id">@match.Player2?.UserName</option>
+                                    }
+                                </select>
+                                <button type="submit">Zatwierdź wynik</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <span>Oczekiwanie na wynik...</span>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    }
+}
+
+<style>
+    .round-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+    .match-card {
+        border: 1px solid #ddd;
+        padding: 12px;
+        width: 220px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+</style>

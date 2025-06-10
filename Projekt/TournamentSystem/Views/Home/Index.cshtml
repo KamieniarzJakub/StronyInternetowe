@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<h1>Welcome to the Tournament System</h1>
+
+<p>
+    <a class="btn btn-primary" asp-controller="Tournament" asp-action="Index">View Upcoming Tournaments</a>
+</p>
+
+@if (!User.Identity.IsAuthenticated)
+{
+    <p>
+        <a class="btn btn-secondary" asp-controller="Account" asp-action="Login">Login</a>
+        <a class="btn btn-secondary" asp-controller="Account" asp-action="Register">Register</a>
+    </p>
+}
+else
+{
+    <p>Hello, @User.Identity.Name!</p>
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head><title>Game Store</title></head>
+<body>
+    <h1>Welcome to Game Store</h1>
+    <% if (message) { %>
+        <p><strong><%= message %></strong></p>
+    <% } %>
+    <form action="/cart" method="get">
+        <button>🛒 Cart <span class="cart-count"><%= cartCount %></span></button>
+    </form>
+    <ul>
+        <% products.forEach(p => { %>
+            <li>
+                <%= p.name %>
+                <% if (cartIds.includes(p.id)) { %>
+                    <strong>(in cart)</strong>
+                <% } else { %>
+                    <form method="post" action="/add-to-cart" style="display:inline">
+                        <input type="hidden" name="productId" value="<%= p.id %>">
+                        <button type="submit">Add to Cart</button>
+                    </form>
+                <% } %>
+            </li>
+        <% }); %>
+    </ul>
+    
+</body>
+</html>

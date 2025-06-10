@@ -1,0 +1,21 @@
+@model TournamentSystem.ViewModels.MyTournamentsViewModel
+
+@{
+    ViewData["Title"] = "Moje turnieje";
+}
+
+<h2>Moje turnieje</h2>
+
+<hr />
+
+<h3>🔜 Nadchodzące turnieje</h3>
+@Html.Partial("_TournamentTable", Model.Upcoming)
+
+<h3>🏁 Aktywne turnieje</h3>
+@Html.Partial("_TournamentTable", Model.Active)
+
+<h3>⏳ Zakończone turnieje</h3>
+@Html.Partial("_TournamentTable", Model.Past)
+
+<h3>🧑‍💼 Organizowane turnieje</h3>
+@Html.Partial("_TournamentTable", Model.Organized)

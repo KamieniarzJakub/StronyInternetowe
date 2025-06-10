@@ -1,0 +1,32 @@
+@model IEnumerable<TournamentSystem.Models.Tournament>
+
+@if (!Model.Any())
+{
+    <p><i>Brak turniejów w tej sekcji.</i></p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nazwa</th>
+                <th>Dyscyplina</th>
+                <th>Data</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var t in Model)
+        {
+            <tr>
+                <td>@t.Name</td>
+                <td>@t.Discipline</td>
+                <td>@t.Date.ToString("dd.MM.yyyy")</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@t.Id" class="btn btn-sm btn-outline-primary">Szczegóły</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

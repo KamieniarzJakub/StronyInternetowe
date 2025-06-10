@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Rex",
+    "description": "A powerful predator with massive strength and durability, excellent for boss fights.",
+    "image": "https://cdn.glitch.global/11f568a7-193f-4935-85b9-5480906538c2/4b6b5a89-4199-42c9-a065-a30337dea0a9.image.png?v=1745254871794",
+    "rating": 3
+  },
+  {
+    "name": "Argentavis",
+    "description": "A large flying mount great for carrying cargo and long-distance travel.",
+    "image": "https://cdn.glitch.global/11f568a7-193f-4935-85b9-5480906538c2/argentavis.png?v=1745330286865",
+    "rating": 4
+  },
+  {
+    "name": "Dodo",
+    "description": "Small, adorable, and mostly useless—except for being a great beginner tame.",
+    "image": "https://cdn.glitch.global/11f568a7-193f-4935-85b9-5480906538c2/Dossier_Dodo.png?v=1745330302615",
+    "rating": 2
+  },
+  {
+    "name": "Spino",
+    "description": "A fast swimmer and deadly predator, especially near water.",
+    "image": "https://cdn.glitch.global/11f568a7-193f-4935-85b9-5480906538c2/Dossier_Spino.png?v=1745330293607",
+    "rating": 4
+  },
+  {
+    "name": "Pteranodon",
+    "description": "Fast and agile flyer, ideal for early game exploration and scouting.",
+    "image": "https://cdn.glitch.global/11f568a7-193f-4935-85b9-5480906538c2/Dossier_Pteranodon.png?v=1745330289385",
+    "rating": 3
+  },
+  {
+    "name": "Trike",
+    "description": "Triceratops is a large, evolved ceratopsid herbivore and one of the last of their kind, and when they weren't peacefully browsing, used their deadly horns and shield frill against predators.",
+    "image": "https://cdn.glitch.global/11f568a7-193f-4935-85b9-5480906538c2/Dossier_Triceratops.png?v=1745330308655",
+    "rating": 2
+  },
+  {
+    "name": "Bronto",
+    "description": "Among giant creatures I've seen on the Island, Brontosaurus is larger than any sauropod I've read about. In fact, the dinosaur is so massive that it serenely ignores most other creatures. I've seen a pack of raptors tear apart small dinosaurs while Brontosaurus continues eating, seemingly oblivious to the hunting pack.",
+    "image": "https://cdn.glitch.global/11f568a7-193f-4935-85b9-5480906538c2/Dossier_Brontosaurus.png?v=1745330305071",
+    "rating": 4
+  }
+]

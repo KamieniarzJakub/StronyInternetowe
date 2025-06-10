@@ -1,0 +1,202 @@
+@use 'reset';
+@use "sass:map";
+
+// Variables
+$font-primary: "Lucida Sans", Verdana, sans-serif;
+$font-secondary: "Times New Roman", Georgia, serif;
+$font-size-base: 16px;
+$gap-size: 20px;
+$border-color: black;
+$background-main: #e0e4cc;
+$logo-size: 75px;
+$border-radius: 25%;
+$breakpoints: (
+    smartphone: 600px,
+    tablet: 1024px
+);
+
+// Mixins
+@mixin flex-container($direction: row, $wrap: nowrap, $justify: flex-start, $align: stretch) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin padding-x($padding) {
+    padding-left: $padding;
+    padding-right: $padding;
+}
+
+// Global styles
+* {
+    box-sizing: border-box;  
+}
+
+body {
+    @include flex-container(column, wrap);
+    gap: $gap-size;
+    min-height: 100vh;
+    font-family: $font-primary;
+    font-size: $font-size-base;
+}
+
+header {
+    padding-top: $gap-size;
+    @include padding-x($gap-size);
+    width: 100%;
+    @include flex-container(row, nowrap, space-between);
+    font-family: $font-secondary;
+}
+
+.title{
+    display: flex;
+}
+
+#logo {
+    width: $logo-size;
+    height: $logo-size;
+}
+
+#title-full-name {
+    padding-left: 0.5*$gap-size;
+    font-size: 2*$font-size-base;
+    @include flex-container(row, nowrap, flex-start, center);
+    
+}
+
+.main-menu {
+    font-size: 1.3*$font-size-base;
+    @include flex-container(row, nowrap, flex-start, center);
+
+    li {
+        @include padding-x($gap-size);
+        display: flex;
+    }    
+}
+
+.hamburger-menu {
+    font-size: 2*$font-size-base;
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+    background-color: $background-main;
+    width: 0.8*$logo-size;
+    height: 0.8*$logo-size;
+    @include flex-container(row, nowrap, center, center);
+}
+
+main {
+    width: 100%;
+    @include padding-x($gap-size);
+    @include flex-container(row, wrap);
+    gap: $gap-size;
+}
+
+.colored,
+.colored-bigger {
+    background-color: $background-main;
+    text-align: justify;
+    border: 1px solid $border-color;
+    @include flex-container(column);
+}
+
+.colored-header {
+    font-size: 1.5*$font-size-base;
+    height: 3*$font-size-base;
+    border-left: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    @include flex-container(row, nowrap, center, center);
+    align-self: flex-end;
+    width: 50%;
+}
+
+p {
+    font-size: $font-size-base;
+    padding-top: $gap-size;
+    @include padding-x($gap-size);
+}
+
+$colors: (
+    first: #69d2e7,
+    second: #f38630,
+    third: #e9aeaf
+);
+
+@each $id, $color in $colors {
+    ##{$id} {
+        background-color: $color;
+    }
+}
+
+footer {
+    @include flex-container(column, nowrap, center, center);
+    background-color: $background-main;
+    width: 100%;
+    border-top: 1px solid $border-color;
+    padding: $gap-size;
+    margin-top: auto;
+}
+
+//Smartphone
+@media only screen and (max-width: #{map.get($breakpoints, smartphone)}) {
+
+    .colored-bigger,
+    .colored {
+        width: 100%;
+    }
+
+    #title-full-name {
+        display: none;
+    }
+
+    .main-menu ul {
+        display: none;
+    }
+}
+
+//Tablet
+@media only screen and (min-width: #{map.get($breakpoints, smartphone)}) and (max-width: #{map.get($breakpoints, tablet)}) {
+    .colored-bigger {
+        width: 100%;
+    }
+
+    .colored-bigger .colored-header {
+        width: 25%;
+    }
+
+    .colored {
+        flex: 1;
+        display: flex;
+    }
+
+    #title-full-name {
+        display: flex;
+    }
+
+    .main-menu ul {
+        display: none;
+    }
+}
+
+//Desktop
+@media only screen and (min-width: #{map.get($breakpoints, tablet)}) {
+
+    .colored-bigger,
+    .colored {
+        flex: 1;
+        display: flex;
+    }
+
+    .colored-bigger .colored-header {
+        width: 50%;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .main-menu ul {
+        display: flex;
+    }
+}

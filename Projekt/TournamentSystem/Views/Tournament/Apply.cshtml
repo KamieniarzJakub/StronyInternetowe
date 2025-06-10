@@ -1,0 +1,43 @@
+@model TournamentSystem.ViewModels.ApplyViewModel
+@{
+    ViewData["Title"] = "Zapisz się na turniej";
+}
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>Turniej: @Model.TournamentName</h4>
+
+<form asp-action="Apply" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="TournamentId" />
+
+    <div class="mb-3">
+        <label asp-for="LicenseNumber" class="form-label"></label>
+        <input asp-for="LicenseNumber" class="form-control" />
+        <span asp-validation-for="LicenseNumber" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Ranking" class="form-label"></label>
+        <input asp-for="Ranking" class="form-control" />
+        <span asp-validation-for="Ranking" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Zapisz się</button>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

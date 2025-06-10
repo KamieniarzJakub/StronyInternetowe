@@ -1,0 +1,4895 @@
+[
+  {
+    "name": "Kreator mozaik",
+    "price": 379.99,
+    "pieces": 4702,
+    "unitPrice": 0.08081454700127605,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kwiaty wiśni",
+    "price": 64.99,
+    "pieces": 430,
+    "unitPrice": 0.15113953488372092,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Ozdoba w kształcie serca",
+    "price": 54.99,
+    "pieces": 254,
+    "unitPrice": 0.21649606299212598,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Dekoracyjna pisanka",
+    "price": 84.99,
+    "pieces": 386,
+    "unitPrice": 0.22018134715025905,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Buldożer do zadań specjalnych",
+    "price": 42.99,
+    "pieces": 195,
+    "unitPrice": 0.22046153846153846,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Zakochane niedźwiedzie",
+    "price": 64.99,
+    "pieces": 287,
+    "unitPrice": 0.22644599303135887,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Notre-Dame w Paryżu",
+    "price": 999.99,
+    "pieces": 4383,
+    "unitPrice": 0.22815195071868583,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Pocztówka z Londynu",
+    "price": 64.99,
+    "pieces": 277,
+    "unitPrice": 0.23462093862815883,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Bugatti Bolide",
+    "price": 214.99,
+    "pieces": 905,
+    "unitPrice": 0.23755801104972377,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Egzotyczny paw",
+    "price": 84.99,
+    "pieces": 355,
+    "unitPrice": 0.23940845070422534,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Mirabel Madrigal",
+    "price": 42.99,
+    "pieces": 179,
+    "unitPrice": 0.24016759776536314,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Choinka",
+    "price": 189.99,
+    "pieces": 784,
+    "unitPrice": 0.2423341836734694,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Hokusai – „Wielka fala”",
+    "price": 439.99,
+    "pieces": 1810,
+    "unitPrice": 0.24308839779005526,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Drzewko bonsai",
+    "price": 214.99,
+    "pieces": 878,
+    "unitPrice": 0.2448633257403189,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Pocztówka z Japonii",
+    "price": 64.99,
+    "pieces": 262,
+    "unitPrice": 0.24805343511450378,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Magiczny zestaw z przezroczystymi klockami",
+    "price": 84.99,
+    "pieces": 340,
+    "unitPrice": 0.2499705882352941,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Tablica ogłoszeń",
+    "price": 439.99,
+    "pieces": 1743,
+    "unitPrice": 0.2524325874928285,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kreatywne pudełko z kolorowymi klockami",
+    "price": 214.99,
+    "pieces": 850,
+    "unitPrice": 0.2529294117647059,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Lama Zaopatrzeniowa",
+    "price": 174.99,
+    "pieces": 691,
+    "unitPrice": 0.25324167872648334,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Fajny zestaw kreatywny",
+    "price": 129.99,
+    "pieces": 510,
+    "unitPrice": 0.2548823529411765,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Kreatywna zabawa neonowymi kolorami",
+    "price": 84.99,
+    "pieces": 333,
+    "unitPrice": 0.2552252252252252,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Dumbo",
+    "price": 44.99,
+    "pieces": 176,
+    "unitPrice": 0.255625,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Urodziny prosiaczka",
+    "price": 89.99,
+    "pieces": 351,
+    "unitPrice": 0.25638176638176635,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Pocztówka z Nowego Jorku",
+    "price": 64.99,
+    "pieces": 253,
+    "unitPrice": 0.2568774703557312,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Czarno-biały kot",
+    "price": 439.99,
+    "pieces": 1710,
+    "unitPrice": 0.2573040935672515,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kreatywna skrzynka szczęścia",
+    "price": 174.99,
+    "pieces": 680,
+    "unitPrice": 0.25733823529411765,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Zimorodek",
+    "price": 214.99,
+    "pieces": 834,
+    "unitPrice": 0.25778177458033574,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Aloy i Varl kontra krabołaz i piłoząb",
+    "price": 199.99,
+    "pieces": 768,
+    "unitPrice": 0.26040364583333336,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Kreatywne pojazdy",
+    "price": 234.99,
+    "pieces": 900,
+    "unitPrice": 0.2611,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Statua Wolności",
+    "price": 439.99,
+    "pieces": 1685,
+    "unitPrice": 0.26112166172106827,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Dziadek do orzechów LEGO®",
+    "price": 54.99,
+    "pieces": 208,
+    "unitPrice": 0.264375,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Cruella i Diabolina",
+    "price": 84.99,
+    "pieces": 320,
+    "unitPrice": 0.26559374999999996,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Mercedes-AMG G 63 i Mercedes-AMG SL 63",
+    "price": 214.99,
+    "pieces": 808,
+    "unitPrice": 0.2660767326732673,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Bukiet z polnych kwiatów",
+    "price": 249.99,
+    "pieces": 939,
+    "unitPrice": 0.2662300319488818,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Hedwiga™ z wizytą na ul. Privet Drive 4",
+    "price": 89.99,
+    "pieces": 337,
+    "unitPrice": 0.26703264094955487,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Kreatywne klocki LEGO®, średnie pudełko",
+    "price": 129.99,
+    "pieces": 484,
+    "unitPrice": 0.2685743801652893,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Wieża Eiffla",
+    "price": 2699.99,
+    "pieces": 10001,
+    "unitPrice": 0.26997200279972,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Psotny kot",
+    "price": 109.99,
+    "pieces": 407,
+    "unitPrice": 0.2702457002457002,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Kreatywne klocki LEGO®, duże pudełko",
+    "price": 214.99,
+    "pieces": 790,
+    "unitPrice": 0.27213924050632915,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Urocze psiaki",
+    "price": 129.99,
+    "pieces": 475,
+    "unitPrice": 0.2736631578947369,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Carl, Russell i Kevin",
+    "price": 84.99,
+    "pieces": 308,
+    "unitPrice": 0.27594155844155843,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Kreatywne domy",
+    "price": 234.99,
+    "pieces": 850,
+    "unitPrice": 0.27645882352941176,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zamek Hogwart™ i błonia",
+    "price": 739.99,
+    "pieces": 2660,
+    "unitPrice": 0.27819172932330827,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Sukulenty",
+    "price": 214.99,
+    "pieces": 771,
+    "unitPrice": 0.27884565499351494,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Dzikie zwierzęta: rodzina pand",
+    "price": 174.99,
+    "pieces": 626,
+    "unitPrice": 0.2795367412140575,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Stitch",
+    "price": 42.99,
+    "pieces": 152,
+    "unitPrice": 0.28282894736842107,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Radość, Smutek i Spina",
+    "price": 84.99,
+    "pieces": 300,
+    "unitPrice": 0.2833,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Małe roślinki",
+    "price": 214.99,
+    "pieces": 758,
+    "unitPrice": 0.2836279683377309,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Muscle car Bowsera — zestaw rozszerzający",
+    "price": 129.99,
+    "pieces": 458,
+    "unitPrice": 0.28382096069868995,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Droga Mleczna",
+    "price": 879.99,
+    "pieces": 3091,
+    "unitPrice": 0.2846942736978324,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Majestatyczny tygrys",
+    "price": 214.99,
+    "pieces": 755,
+    "unitPrice": 0.28475496688741725,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Wioska Wikingów",
+    "price": 599.99,
+    "pieces": 2103,
+    "unitPrice": 0.2853019495958155,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Pomarańczowe Lamborghini Huracán Tecnica",
+    "price": 229.99,
+    "pieces": 806,
+    "unitPrice": 0.28534739454094293,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Lamborghini Huracán Tecnica",
+    "price": 229.99,
+    "pieces": 806,
+    "unitPrice": 0.28534739454094293,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Gru i minionki z klocków",
+    "price": 239.99,
+    "pieces": 839,
+    "unitPrice": 0.2860429082240763,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kreatywne smakołyki",
+    "price": 42.99,
+    "pieces": 150,
+    "unitPrice": 0.2866,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Szary hipersamochód Koenigsegg Jesko Absolut",
+    "price": 229.99,
+    "pieces": 801,
+    "unitPrice": 0.2871285892634207,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Biały hipersamochód Koenigsegg Jesko Absolut",
+    "price": 229.99,
+    "pieces": 801,
+    "unitPrice": 0.2871285892634207,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kłapouchy",
+    "price": 44.99,
+    "pieces": 156,
+    "unitPrice": 0.2883974358974359,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Czerwony smok",
+    "price": 42.99,
+    "pieces": 149,
+    "unitPrice": 0.2885234899328859,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Kreatywne planety",
+    "price": 129.99,
+    "pieces": 450,
+    "unitPrice": 0.28886666666666666,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Górska chata",
+    "price": 439.99,
+    "pieces": 1517,
+    "unitPrice": 0.29003955174686885,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Dowódca klonów Cody™",
+    "price": 42.99,
+    "pieces": 147,
+    "unitPrice": 0.29244897959183674,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Mona Lisa",
+    "price": 439.99,
+    "pieces": 1503,
+    "unitPrice": 0.29274118429807056,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kreatywny zestaw do budowania i zabawy",
+    "price": 219.99,
+    "pieces": 750,
+    "unitPrice": 0.29332,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kawiarnia w Heartlake",
+    "price": 124.99,
+    "pieces": 426,
+    "unitPrice": 0.2934037558685446,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Kwiaty lotosu",
+    "price": 64.99,
+    "pieces": 220,
+    "unitPrice": 0.2954090909090909,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Doniczka Isabeli",
+    "price": 189.99,
+    "pieces": 641,
+    "unitPrice": 0.29639625585023405,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Magiczny jednorożec",
+    "price": 42.99,
+    "pieces": 145,
+    "unitPrice": 0.2964827586206897,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Zestaw z helikopterem, wozem strażackim i łodzią podwodną",
+    "price": 259.99,
+    "pieces": 874,
+    "unitPrice": 0.29747139588100685,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Śmieciarka Mack® LR Electric",
+    "price": 149.99,
+    "pieces": 503,
+    "unitPrice": 0.29819085487077535,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Prom kosmiczny",
+    "price": 42.99,
+    "pieces": 144,
+    "unitPrice": 0.2985416666666667,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Pociąg szybkobieżny",
+    "price": 84.99,
+    "pieces": 284,
+    "unitPrice": 0.2992605633802817,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Kreatywne zwierzęce przygody Bunchu",
+    "price": 42.99,
+    "pieces": 143,
+    "unitPrice": 0.3006293706293706,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Żonkile",
+    "price": 64.99,
+    "pieces": 216,
+    "unitPrice": 0.3008796296296296,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Średniowieczny plac miejski",
+    "price": 999.99,
+    "pieces": 3304,
+    "unitPrice": 0.302660411622276,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Szkielety dinozaurów — czaszka tyranozaura",
+    "price": 174.99,
+    "pieces": 577,
+    "unitPrice": 0.30327556325823224,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Kosmiczne laboratorium naukowe",
+    "price": 169.99,
+    "pieces": 560,
+    "unitPrice": 0.3035535714285714,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Bukiet róż",
+    "price": 249.99,
+    "pieces": 822,
+    "unitPrice": 0.3041240875912409,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Poczta Świętego Mikołaja",
+    "price": 439.99,
+    "pieces": 1440,
+    "unitPrice": 0.3055486111111111,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Dom w stylu angielskim",
+    "price": 999.99,
+    "pieces": 3266,
+    "unitPrice": 0.3061818738518065,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Figurki Toma i Jerry’ego",
+    "price": 64.99,
+    "pieces": 212,
+    "unitPrice": 0.3065566037735849,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Doniczka Vaiany",
+    "price": 189.99,
+    "pieces": 619,
+    "unitPrice": 0.30693053311793217,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Mały ankylozaur Bumpy",
+    "price": 109.99,
+    "pieces": 358,
+    "unitPrice": 0.30723463687150837,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Miniaturowy zamek Disneya",
+    "price": 174.99,
+    "pieces": 567,
+    "unitPrice": 0.30862433862433863,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Zwierzęta morskie",
+    "price": 129.99,
+    "pieces": 421,
+    "unitPrice": 0.3087648456057007,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Batman: Gotham™ z serialu The Animated Series",
+    "price": 1299.99,
+    "pieces": 4210,
+    "unitPrice": 0.3087862232779097,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Kwiaty w konewce",
+    "price": 129.99,
+    "pieces": 420,
+    "unitPrice": 0.3095,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Skórkościec",
+    "price": 439.99,
+    "pieces": 1414,
+    "unitPrice": 0.31116690240452616,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kołowrotek dla chomików",
+    "price": 129.99,
+    "pieces": 416,
+    "unitPrice": 0.3124759615384616,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "LEGO® SERIOUS PLAY® Zestaw zapoznawczy",
+    "price": 1599.99,
+    "pieces": 5100,
+    "unitPrice": 0.31372352941176473,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Disney Mały zamek Arielki",
+    "price": 174.99,
+    "pieces": 557,
+    "unitPrice": 0.31416517055655296,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Ciężarówka z platformą i helikopterem",
+    "price": 84.99,
+    "pieces": 270,
+    "unitPrice": 0.31477777777777777,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Kolekcja owadów",
+    "price": 349.99,
+    "pieces": 1111,
+    "unitPrice": 0.31502250225022504,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Turniejowe miasto ze świątynią",
+    "price": 1099.99,
+    "pieces": 3489,
+    "unitPrice": 0.3152737173975351,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Środowisko naturalne kosmitów",
+    "price": 64.99,
+    "pieces": 206,
+    "unitPrice": 0.31548543689320385,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Figurki z filmu „Więzień Azkabanu”",
+    "price": 219.99,
+    "pieces": 697,
+    "unitPrice": 0.3156241032998565,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Halloweenowa stodoła",
+    "price": 64.99,
+    "pieces": 205,
+    "unitPrice": 0.3170243902439024,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Francuska kawiarenka",
+    "price": 349.99,
+    "pieces": 1101,
+    "unitPrice": 0.3178837420526794,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Samochody wyścigowe BMW M4 GT3 & BMW M Hybrid V8",
+    "price": 214.99,
+    "pieces": 676,
+    "unitPrice": 0.3180325443786982,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "LEGO® Titanic",
+    "price": 2899.99,
+    "pieces": 9090,
+    "unitPrice": 0.319030803080308,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Rakieta SLS NASA Artemis",
+    "price": 1149.99,
+    "pieces": 3601,
+    "unitPrice": 0.31935295751180226,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Odrzutowy kontroler Coopera",
+    "price": 84.99,
+    "pieces": 266,
+    "unitPrice": 0.3195112781954887,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "„Gwiaździsta noc” Vincenta van Gogha",
+    "price": 739.99,
+    "pieces": 2316,
+    "unitPrice": 0.3195120898100173,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Wyścigowy łazik terenowy",
+    "price": 69.99,
+    "pieces": 219,
+    "unitPrice": 0.31958904109589037,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Wiosenny plac zabaw dla zwierzątek",
+    "price": 54.99,
+    "pieces": 172,
+    "unitPrice": 0.3197093023255814,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Magiczne sklepy na Ulicy Pokątnej",
+    "price": 879.99,
+    "pieces": 2750,
+    "unitPrice": 0.31999636363636363,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Figurka Wednesday Addams",
+    "price": 224.99,
+    "pieces": 702,
+    "unitPrice": 0.3204985754985755,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Leśne zwierzęta: Czerwony lis",
+    "price": 214.99,
+    "pieces": 667,
+    "unitPrice": 0.32232383808095955,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Transportowy statek kosmiczny VTOL LT81",
+    "price": 439.99,
+    "pieces": 1365,
+    "unitPrice": 0.32233699633699636,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Skrzat domowy Zgredek™",
+    "price": 129.99,
+    "pieces": 403,
+    "unitPrice": 0.3225558312655087,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Muzeum Historii Naturalnej",
+    "price": 1299.99,
+    "pieces": 4014,
+    "unitPrice": 0.32386397608370704,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Monkie Kid w wielofunkcyjnym mechu",
+    "price": 89.99,
+    "pieces": 277,
+    "unitPrice": 0.32487364620938625,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Czerwony, piętrowy autokar",
+    "price": 124.99,
+    "pieces": 384,
+    "unitPrice": 0.32549479166666667,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Aparat w stylu retro",
+    "price": 84.99,
+    "pieces": 261,
+    "unitPrice": 0.32563218390804594,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Arena turniejowa",
+    "price": 214.99,
+    "pieces": 659,
+    "unitPrice": 0.32623672230652506,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Obi-Wan Kenobi™ i Darth Vader™",
+    "price": 84.99,
+    "pieces": 260,
+    "unitPrice": 0.3268846153846154,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Pachira",
+    "price": 109.99,
+    "pieces": 336,
+    "unitPrice": 0.32735119047619043,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Pensjonat w zamku",
+    "price": 429.99,
+    "pieces": 1311,
+    "unitPrice": 0.3279862700228833,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Mityczne stworzenie Qilin",
+    "price": 259.99,
+    "pieces": 791,
+    "unitPrice": 0.328685208596713,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "LEGO® Ideas Sam w domu",
+    "price": 1299.99,
+    "pieces": 3955,
+    "unitPrice": 0.3286953223767383,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Zamek Himeji",
+    "price": 699.99,
+    "pieces": 2125,
+    "unitPrice": 0.32940705882352944,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Zaciszny ogród",
+    "price": 449.99,
+    "pieces": 1363,
+    "unitPrice": 0.33014673514306675,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Bukiet kwiatów",
+    "price": 249.99,
+    "pieces": 756,
+    "unitPrice": 0.3306746031746032,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "John Deere 9700 Forage Harvester",
+    "price": 184.99,
+    "pieces": 559,
+    "unitPrice": 0.3309302325581395,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Paryż",
+    "price": 214.99,
+    "pieces": 649,
+    "unitPrice": 0.33126348228043145,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Piknik pary jeżyków",
+    "price": 54.99,
+    "pieces": 166,
+    "unitPrice": 0.33126506024096386,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Duża minifigurka kierowcy wyścigowego",
+    "price": 229.99,
+    "pieces": 694,
+    "unitPrice": 0.3313976945244957,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Mały zamek Śpiącej Królewny Disneya",
+    "price": 174.99,
+    "pieces": 528,
+    "unitPrice": 0.33142045454545455,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Astronauta",
+    "price": 214.99,
+    "pieces": 647,
+    "unitPrice": 0.33228748068006186,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kreatywne dinozaury",
+    "price": 149.99,
+    "pieces": 450,
+    "unitPrice": 0.3333111111111111,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Kreatywne zwierzątka",
+    "price": 149.99,
+    "pieces": 450,
+    "unitPrice": 0.3333111111111111,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Fast and Furious Toyota Supra MK4",
+    "price": 269.99,
+    "pieces": 810,
+    "unitPrice": 0.333320987654321,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Piękny bukiet różowych kwiatów",
+    "price": 249.99,
+    "pieces": 749,
+    "unitPrice": 0.3337650200267023,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Przygoda w kamperze przyjaciół",
+    "price": 259.99,
+    "pieces": 778,
+    "unitPrice": 0.33417737789203084,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Stół warsztatowy",
+    "price": 399.99,
+    "pieces": 1195,
+    "unitPrice": 0.33471966527196656,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "5. rocznica Megapolis",
+    "price": 779.99,
+    "pieces": 2330,
+    "unitPrice": 0.3347596566523605,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Tropikalne ukulele",
+    "price": 129.99,
+    "pieces": 387,
+    "unitPrice": 0.3358914728682171,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Robot i pojazd Bumblebee",
+    "price": 84.99,
+    "pieces": 253,
+    "unitPrice": 0.3359288537549407,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "„Słoneczniki” Vincenta van Gogha",
+    "price": 879.99,
+    "pieces": 2615,
+    "unitPrice": 0.3365162523900574,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Durr Burgerownia",
+    "price": 64.99,
+    "pieces": 193,
+    "unitPrice": 0.3367357512953368,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Izzie i gamerski Bunchu",
+    "price": 84.99,
+    "pieces": 252,
+    "unitPrice": 0.33726190476190476,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Wakacyjny kamper pełen przygód",
+    "price": 129.99,
+    "pieces": 385,
+    "unitPrice": 0.3376363636363637,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Fontanna w ogrodzie",
+    "price": 439.99,
+    "pieces": 1302,
+    "unitPrice": 0.33793394777265745,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Figurka Batmana™ 8 w 1",
+    "price": 109.99,
+    "pieces": 325,
+    "unitPrice": 0.3384307692307692,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Warsztaty w mieście NINJAGO®",
+    "price": 1099.99,
+    "pieces": 3244,
+    "unitPrice": 0.33908446362515415,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Tradycyjna chińska lampa",
+    "price": 439.99,
+    "pieces": 1295,
+    "unitPrice": 0.3397606177606178,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Słoneczniki",
+    "price": 64.99,
+    "pieces": 191,
+    "unitPrice": 0.34026178010471203,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Pocztówka z Australii",
+    "price": 64.99,
+    "pieces": 191,
+    "unitPrice": 0.34026178010471203,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Zamek Hogwart™",
+    "price": 2049.99,
+    "pieces": 6020,
+    "unitPrice": 0.34052990033222585,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Pomyślność",
+    "price": 349.99,
+    "pieces": 1021,
+    "unitPrice": 0.34279138099902057,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kamper z mobilnym obserwatorium gwiazd",
+    "price": 124.99,
+    "pieces": 364,
+    "unitPrice": 0.34337912087912087,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Nissan Skyline GT-R (R34) z filmu „Za szybcy, za wściekli”",
+    "price": 109.99,
+    "pieces": 319,
+    "unitPrice": 0.3447962382445141,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Kosmiczna ładowarka LT78",
+    "price": 149.99,
+    "pieces": 435,
+    "unitPrice": 0.34480459770114946,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Klub jazzowy",
+    "price": 999.99,
+    "pieces": 2899,
+    "unitPrice": 0.3449430838220076,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Wielki zestaw wyścigowy",
+    "price": 124.99,
+    "pieces": 362,
+    "unitPrice": 0.34527624309392263,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Żółta taksówka",
+    "price": 42.99,
+    "pieces": 124,
+    "unitPrice": 0.3466935483870968,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Tyranozaur Mały",
+    "price": 109.99,
+    "pieces": 317,
+    "unitPrice": 0.34697160883280753,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Policyjna ciężarówka z laboratorium kryminalnym",
+    "price": 234.99,
+    "pieces": 674,
+    "unitPrice": 0.3486498516320475,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Sportowy Ford Mustang Dark Horse",
+    "price": 119.99,
+    "pieces": 344,
+    "unitPrice": 0.3488081395348837,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Szkielety dinozaurów: tyranozaur",
+    "price": 1099.99,
+    "pieces": 3145,
+    "unitPrice": 0.349758346581876,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Powiększona minifigurka LEGO®",
+    "price": 229.99,
+    "pieces": 654,
+    "unitPrice": 0.3516666666666667,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Ulica Pokątna™",
+    "price": 1949.99,
+    "pieces": 5544,
+    "unitPrice": 0.351729797979798,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Żółta walizka podróżna",
+    "price": 64.99,
+    "pieces": 184,
+    "unitPrice": 0.3532065217391304,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Orchidea",
+    "price": 214.99,
+    "pieces": 608,
+    "unitPrice": 0.35360197368421054,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Gwiazda Betlejemska",
+    "price": 214.99,
+    "pieces": 608,
+    "unitPrice": 0.35360197368421054,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Nawiedzona rezydencja Kinga Boo",
+    "price": 329.99,
+    "pieces": 932,
+    "unitPrice": 0.35406652360515023,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Statek międzygwiezdny",
+    "price": 84.99,
+    "pieces": 240,
+    "unitPrice": 0.35412499999999997,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Gramofon z kwiatami",
+    "price": 129.99,
+    "pieces": 366,
+    "unitPrice": 0.3551639344262295,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Przygody Z-Bloba — roboty i pojazdy",
+    "price": 42.99,
+    "pieces": 121,
+    "unitPrice": 0.3552892561983471,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Wednesday i Enid",
+    "price": 84.99,
+    "pieces": 239,
+    "unitPrice": 0.35560669456066946,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Czerwona londyńska budka telefoniczna",
+    "price": 519.99,
+    "pieces": 1460,
+    "unitPrice": 0.35615753424657537,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Przejażdżka motocyklowa Hagrida i Harry’ego",
+    "price": 219.99,
+    "pieces": 617,
+    "unitPrice": 0.35654781199351704,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Północny kruk Nigdywiedźmy",
+    "price": 429.99,
+    "pieces": 1203,
+    "unitPrice": 0.35743142144638407,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Maszyna do pisania z kwiatami",
+    "price": 129.99,
+    "pieces": 363,
+    "unitPrice": 0.358099173553719,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Myszka Miki w stroju na wiosenny festiwal",
+    "price": 42.99,
+    "pieces": 120,
+    "unitPrice": 0.35825,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Robot i pojazd Optimus Prime",
+    "price": 84.99,
+    "pieces": 237,
+    "unitPrice": 0.35860759493670885,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Mech X-Wing™ Luke’a Skywalkera™",
+    "price": 69.99,
+    "pieces": 195,
+    "unitPrice": 0.3589230769230769,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Dzikie zwierzęta z safari",
+    "price": 279.99,
+    "pieces": 780,
+    "unitPrice": 0.3589615384615385,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Stadko kosmitów",
+    "price": 64.99,
+    "pieces": 181,
+    "unitPrice": 0.35906077348066295,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Dzikie zwierzęta: niezwykły pająk",
+    "price": 54.99,
+    "pieces": 153,
+    "unitPrice": 0.3594117647058824,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Kolekcja ozdób świątecznych",
+    "price": 54.99,
+    "pieces": 153,
+    "unitPrice": 0.3594117647058824,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Nowy Jork",
+    "price": 214.99,
+    "pieces": 598,
+    "unitPrice": 0.35951505016722407,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Hardodziob™",
+    "price": 259.99,
+    "pieces": 723,
+    "unitPrice": 0.35959889349930846,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Monkie Kid w minimechu",
+    "price": 199.99,
+    "pieces": 556,
+    "unitPrice": 0.35969424460431654,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Samolot transportowy",
+    "price": 119.99,
+    "pieces": 333,
+    "unitPrice": 0.3603303303303303,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Figurka Zielonego Goblina",
+    "price": 169.99,
+    "pieces": 471,
+    "unitPrice": 0.36091295116772826,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Ford GT, wersja z 2022 roku",
+    "price": 529.99,
+    "pieces": 1468,
+    "unitPrice": 0.36102861035422346,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Mech żywiołu ziemi Cole’a",
+    "price": 84.99,
+    "pieces": 235,
+    "unitPrice": 0.3616595744680851,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Zamek Disneya",
+    "price": 1749.99,
+    "pieces": 4837,
+    "unitPrice": 0.361792433326442,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Klasyczny serial telewizyjny Batman™ — Batmobil™",
+    "price": 659.99,
+    "pieces": 1822,
+    "unitPrice": 0.3622338090010977,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Hełm kapitana Rexa™",
+    "price": 309.99,
+    "pieces": 854,
+    "unitPrice": 0.3629859484777518,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Średniowieczny smok",
+    "price": 259.99,
+    "pieces": 715,
+    "unitPrice": 0.36362237762237765,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Monkey King w ultramechu",
+    "price": 619.99,
+    "pieces": 1705,
+    "unitPrice": 0.36363049853372437,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Uroczy kanarek Tweety",
+    "price": 149.99,
+    "pieces": 412,
+    "unitPrice": 0.36405339805825243,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Vespa",
+    "price": 42.99,
+    "pieces": 118,
+    "unitPrice": 0.3643220338983051,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "London Bus",
+    "price": 42.99,
+    "pieces": 118,
+    "unitPrice": 0.3643220338983051,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Statek powietrzny: samolot wyścigowy",
+    "price": 64.99,
+    "pieces": 178,
+    "unitPrice": 0.36511235955056176,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Władca pierścieni: Barad-dûr™",
+    "price": 1999.99,
+    "pieces": 5471,
+    "unitPrice": 0.36556205446901846,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "NASCAR® Next Gen Chevrolet Camaro ZL1",
+    "price": 119.99,
+    "pieces": 328,
+    "unitPrice": 0.3658231707317073,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Mieszkania i sklepy w mieście Heartlake",
+    "price": 749.99,
+    "pieces": 2040,
+    "unitPrice": 0.3676421568627451,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Chatka Hagrida: niespodziewana wizyta",
+    "price": 329.99,
+    "pieces": 896,
+    "unitPrice": 0.3682924107142857,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Wieniec",
+    "price": 439.99,
+    "pieces": 1194,
+    "unitPrice": 0.36850083752093804,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Chevrolet Corvette Stingray",
+    "price": 269.99,
+    "pieces": 732,
+    "unitPrice": 0.36883879781420764,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Suknia Kopciuszka",
+    "price": 174.99,
+    "pieces": 474,
+    "unitPrice": 0.36917721518987345,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Dom pszczelarzy i kwiatowy ogród",
+    "price": 429.99,
+    "pieces": 1161,
+    "unitPrice": 0.37036175710594316,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Wielofunkcyjny ultramech Zane’a",
+    "price": 439.99,
+    "pieces": 1187,
+    "unitPrice": 0.37067396798652064,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kreatywny zestaw do budowy droidów™",
+    "price": 439.99,
+    "pieces": 1186,
+    "unitPrice": 0.37098650927487353,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "NASA Mars Rover Perseverance",
+    "price": 419.99,
+    "pieces": 1132,
+    "unitPrice": 0.37101590106007065,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Żółta koparka",
+    "price": 234.99,
+    "pieces": 633,
+    "unitPrice": 0.37123222748815166,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Panda czerwona Mei",
+    "price": 44.99,
+    "pieces": 121,
+    "unitPrice": 0.3718181818181818,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Fontanna di Trevi",
+    "price": 699.99,
+    "pieces": 1880,
+    "unitPrice": 0.37233510638297873,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Strażnicy Galaktyki: Milano",
+    "price": 779.99,
+    "pieces": 2090,
+    "unitPrice": 0.37320095693779903,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Londyn",
+    "price": 174.99,
+    "pieces": 468,
+    "unitPrice": 0.37391025641025644,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Pościg terenówką policyjną",
+    "price": 174.99,
+    "pieces": 467,
+    "unitPrice": 0.374710920770878,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Goomba i plac zabaw",
+    "price": 64.99,
+    "pieces": 173,
+    "unitPrice": 0.37566473988439303,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Koci motocykl Zoey",
+    "price": 84.99,
+    "pieces": 226,
+    "unitPrice": 0.3760619469026548,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Kalendarz festiwalowy",
+    "price": 129.99,
+    "pieces": 345,
+    "unitPrice": 0.3767826086956522,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Supersamochód Ferrari F40",
+    "price": 119.99,
+    "pieces": 318,
+    "unitPrice": 0.3773270440251572,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Dom prosiaczka",
+    "price": 89.99,
+    "pieces": 238,
+    "unitPrice": 0.37810924369747895,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Ciężarówka Świętego Mikołaja",
+    "price": 84.99,
+    "pieces": 224,
+    "unitPrice": 0.37941964285714286,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Wrotka w stylu retro",
+    "price": 129.99,
+    "pieces": 342,
+    "unitPrice": 0.38008771929824564,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Mocarna panda Logana",
+    "price": 129.99,
+    "pieces": 342,
+    "unitPrice": 0.38008771929824564,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Groot w doniczce",
+    "price": 42.99,
+    "pieces": 113,
+    "unitPrice": 0.3804424778761062,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Mercedes-Benz G 500 PROFESSIONAL Line",
+    "price": 1099.99,
+    "pieces": 2891,
+    "unitPrice": 0.3804877205119336,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "W głowie się nie mieści 2 — kostki z emocjami",
+    "price": 149.99,
+    "pieces": 394,
+    "unitPrice": 0.3806852791878173,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Bowser i pociąg ekspresowy",
+    "price": 529.99,
+    "pieces": 1392,
+    "unitPrice": 0.38073994252873566,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Samochód wyścigowy i laweta",
+    "price": 124.99,
+    "pieces": 328,
+    "unitPrice": 0.3810670731707317,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Samochód bezpieczeństwa Aston Martin i AMR23",
+    "price": 214.99,
+    "pieces": 564,
+    "unitPrice": 0.38118794326241134,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Dinorobot Coopera C-Rex",
+    "price": 349.99,
+    "pieces": 917,
+    "unitPrice": 0.38166848418756816,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Dom rodzinny Olly’ego i Paisley",
+    "price": 429.99,
+    "pieces": 1126,
+    "unitPrice": 0.38187388987566606,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Dzikie zwierzęta: różowy flaming",
+    "price": 109.99,
+    "pieces": 288,
+    "unitPrice": 0.3819097222222222,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Endurance",
+    "price": 1149.99,
+    "pieces": 3011,
+    "unitPrice": 0.3819295914978412,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Blacktron Renegade",
+    "price": 439.99,
+    "pieces": 1151,
+    "unitPrice": 0.3822675933970461,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Przyjęcie urodzinowe Juliana",
+    "price": 64.99,
+    "pieces": 170,
+    "unitPrice": 0.3822941176470588,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Ogród botaniczny",
+    "price": 1449.99,
+    "pieces": 3792,
+    "unitPrice": 0.38238132911392403,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Niebiańska pagoda",
+    "price": 619.99,
+    "pieces": 1621,
+    "unitPrice": 0.38247378161628626,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Król Lew — lwiątko Simba",
+    "price": 84.99,
+    "pieces": 222,
+    "unitPrice": 0.3828378378378378,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Pokój Autumn",
+    "price": 84.99,
+    "pieces": 222,
+    "unitPrice": 0.3828378378378378,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Nadmorski port ze statkiem towarowym",
+    "price": 469.99,
+    "pieces": 1226,
+    "unitPrice": 0.38335236541598694,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Stitch",
+    "price": 279.99,
+    "pieces": 730,
+    "unitPrice": 0.38354794520547947,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Rodzinne drzewo",
+    "price": 399.99,
+    "pieces": 1040,
+    "unitPrice": 0.3846057692307692,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Bank Gringotta™ — edycja kolekcjonerska",
+    "price": 1849.99,
+    "pieces": 4801,
+    "unitPrice": 0.38533430535305147,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Nowoczesna rezydencja Andrei",
+    "price": 879.99,
+    "pieces": 2275,
+    "unitPrice": 0.3868087912087912,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Ciężarówka Volvo FMX i koparka EC230 Electric",
+    "price": 879.99,
+    "pieces": 2274,
+    "unitPrice": 0.3869788918205805,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Królewska muszla Małej Syrenki",
+    "price": 699.99,
+    "pieces": 1808,
+    "unitPrice": 0.38716261061946905,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Mario Kart™ – Donkey Kong i DK Jumbo",
+    "price": 149.99,
+    "pieces": 387,
+    "unitPrice": 0.3875710594315246,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Ramka na zdjęcia i szkatułka Mirabel",
+    "price": 129.99,
+    "pieces": 334,
+    "unitPrice": 0.3891916167664671,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Restauracja i szkoła gotowania",
+    "price": 349.99,
+    "pieces": 896,
+    "unitPrice": 0.3906138392857143,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Stoisko z watą cukrową i skuter",
+    "price": 42.99,
+    "pieces": 110,
+    "unitPrice": 0.39081818181818184,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Kosmiczny robot",
+    "price": 109.99,
+    "pieces": 281,
+    "unitPrice": 0.391423487544484,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Rejs statkiem pirackim",
+    "price": 64.99,
+    "pieces": 166,
+    "unitPrice": 0.3915060240963855,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Modułowa stacja kosmiczna",
+    "price": 429.99,
+    "pieces": 1097,
+    "unitPrice": 0.3919690063810392,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Poszukiwanie pisanek z zajączkiem i kurczaczkiem",
+    "price": 54.99,
+    "pieces": 140,
+    "unitPrice": 0.3927857142857143,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Roy i bitwa na zamku Peach",
+    "price": 289.99,
+    "pieces": 738,
+    "unitPrice": 0.39294037940379406,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Dom z bajki „Odlot”",
+    "price": 234.99,
+    "pieces": 598,
+    "unitPrice": 0.3929598662207358,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Latający Ford Anglia™",
+    "price": 64.99,
+    "pieces": 165,
+    "unitPrice": 0.39387878787878783,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Król Lew — młody Simba",
+    "price": 569.99,
+    "pieces": 1445,
+    "unitPrice": 0.3944567474048443,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Daily Bugle",
+    "price": 1499.99,
+    "pieces": 3789,
+    "unitPrice": 0.3958801794668778,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "F1® Ciężarówka z bolidami RB20 i AMR24 F1®",
+    "price": 429.99,
+    "pieces": 1086,
+    "unitPrice": 0.39593922651933705,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kwiat śliwy",
+    "price": 129.99,
+    "pieces": 327,
+    "unitPrice": 0.39752293577981657,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Terenówka badacza dżungli",
+    "price": 124.99,
+    "pieces": 314,
+    "unitPrice": 0.39805732484076434,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Ewolucja przedmiotów ścisłych",
+    "price": 349.99,
+    "pieces": 879,
+    "unitPrice": 0.3981683731513083,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Magia Disneya",
+    "price": 439.99,
+    "pieces": 1103,
+    "unitPrice": 0.3989029918404352,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Plażowa budka z koktajlami",
+    "price": 84.99,
+    "pieces": 213,
+    "unitPrice": 0.39901408450704223,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Pościg radiowozu za muscle carem",
+    "price": 84.99,
+    "pieces": 213,
+    "unitPrice": 0.39901408450704223,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Kreatywna walizka",
+    "price": 84.99,
+    "pieces": 213,
+    "unitPrice": 0.39901408450704223,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Dracena sandera",
+    "price": 129.99,
+    "pieces": 325,
+    "unitPrice": 0.3999692307692308,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Disney: Miasteczko Halloween Tima Burtona",
+    "price": 879.99,
+    "pieces": 2193,
+    "unitPrice": 0.40127222982216143,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Soda Jungle — zestaw twórcy",
+    "price": 239.99,
+    "pieces": 598,
+    "unitPrice": 0.40132107023411373,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Sokół Millennium™",
+    "price": 369.99,
+    "pieces": 921,
+    "unitPrice": 0.40172638436482083,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Złomowisko z samochodami",
+    "price": 349.99,
+    "pieces": 871,
+    "unitPrice": 0.4018254879448909,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kosmiczny łazik i badanie życia w kosmosie",
+    "price": 124.99,
+    "pieces": 311,
+    "unitPrice": 0.4018971061093247,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "F1® Pit stop i mechanicy z bolidem Ferrari",
+    "price": 129.99,
+    "pieces": 322,
+    "unitPrice": 0.40369565217391307,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Mech żywiołu ognia Kaia",
+    "price": 129.99,
+    "pieces": 322,
+    "unitPrice": 0.40369565217391307,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Świąteczna dekoracja stołu",
+    "price": 174.99,
+    "pieces": 433,
+    "unitPrice": 0.40413394919168594,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Mario Kart™ – Baby Mario kontra Baby Luigi",
+    "price": 129.99,
+    "pieces": 321,
+    "unitPrice": 0.4049532710280374,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Żółta ciężarówka dostawcza",
+    "price": 429.99,
+    "pieces": 1061,
+    "unitPrice": 0.4052686145146089,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Przejażdżka wagonikiem Diddy Konga — zestaw rozszerzający",
+    "price": 469.99,
+    "pieces": 1157,
+    "unitPrice": 0.4062143474503025,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Mech żywiołu technologii Sory",
+    "price": 84.99,
+    "pieces": 209,
+    "unitPrice": 0.40665071770334926,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Tytanowy smok-mech Cole’a",
+    "price": 429.99,
+    "pieces": 1055,
+    "unitPrice": 0.4075734597156398,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Wiśniowy ogród",
+    "price": 124.99,
+    "pieces": 304,
+    "unitPrice": 0.41115131578947367,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Szpital w mieście Heartlake",
+    "price": 429.99,
+    "pieces": 1045,
+    "unitPrice": 0.4114736842105263,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zamek z Pięknej i Bestii",
+    "price": 1199.99,
+    "pieces": 2916,
+    "unitPrice": 0.4115192043895748,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Mech ognistego pierścienia Nezhy",
+    "price": 479.99,
+    "pieces": 1163,
+    "unitPrice": 0.4127171109200344,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Marsjański łazik eksploracyjny",
+    "price": 659.99,
+    "pieces": 1599,
+    "unitPrice": 0.41275171982489056,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Koparko-ładowarka",
+    "price": 42.99,
+    "pieces": 104,
+    "unitPrice": 0.41336538461538463,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Wieża Avengersów",
+    "price": 2149.99,
+    "pieces": 5201,
+    "unitPrice": 0.4133801192078446,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Kwiatowa kompozycja",
+    "price": 479.99,
+    "pieces": 1161,
+    "unitPrice": 0.41342807924203273,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Strzelnica na letnim obozie łuczniczym",
+    "price": 64.99,
+    "pieces": 157,
+    "unitPrice": 0.41394904458598725,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Remiza strażacka z wozem strażackim",
+    "price": 349.99,
+    "pieces": 843,
+    "unitPrice": 0.41517200474495847,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Terenowy wóz strażacki z łodzią ratunkową",
+    "price": 124.99,
+    "pieces": 301,
+    "unitPrice": 0.41524916943521595,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Padok F1® z bolidami VCARB i Sauber",
+    "price": 129.99,
+    "pieces": 313,
+    "unitPrice": 0.4153035143769968,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Tyranozaur",
+    "price": 259.99,
+    "pieces": 626,
+    "unitPrice": 0.4153194888178914,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Sklep z używaną odzieżą",
+    "price": 169.99,
+    "pieces": 409,
+    "unitPrice": 0.4156234718826406,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Stwory z koszmarów Nigdywiedźmy",
+    "price": 189.99,
+    "pieces": 457,
+    "unitPrice": 0.41573304157549235,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Concorde",
+    "price": 869.99,
+    "pieces": 2083,
+    "unitPrice": 0.41766202592414786,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Figurka nowego Kapitana Ameryki",
+    "price": 149.99,
+    "pieces": 359,
+    "unitPrice": 0.41779944289693594,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Potężny Azure Lion",
+    "price": 329.99,
+    "pieces": 789,
+    "unitPrice": 0.4182382762991128,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Dwór Malfoyów",
+    "price": 669.99,
+    "pieces": 1601,
+    "unitPrice": 0.41848219862585884,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Pokaz talentów muzycznych w Heartlake",
+    "price": 279.99,
+    "pieces": 669,
+    "unitPrice": 0.4185201793721973,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Akademik Glindy i Elphaby",
+    "price": 309.99,
+    "pieces": 740,
+    "unitPrice": 0.41890540540540544,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "R2-D2™",
+    "price": 439.99,
+    "pieces": 1050,
+    "unitPrice": 0.41903809523809527,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Posterunek policji",
+    "price": 279.99,
+    "pieces": 668,
+    "unitPrice": 0.41914670658682635,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "EWA i WALL-E",
+    "price": 64.99,
+    "pieces": 155,
+    "unitPrice": 0.41929032258064514,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Hełm Dartha Vadera™",
+    "price": 349.99,
+    "pieces": 834,
+    "unitPrice": 0.41965227817745804,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Grogu™ w wózku",
+    "price": 439.99,
+    "pieces": 1048,
+    "unitPrice": 0.419837786259542,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Piramida Cheopsa",
+    "price": 619.99,
+    "pieces": 1476,
+    "unitPrice": 0.4200474254742548,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Mech-rycerz Mateo i Z-Bloba",
+    "price": 559.99,
+    "pieces": 1333,
+    "unitPrice": 0.42009752438109527,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Brzeszczot™",
+    "price": 2599.99,
+    "pieces": 6187,
+    "unitPrice": 0.42023436237271694,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Centrum handlowe w Heartlake City",
+    "price": 519.99,
+    "pieces": 1237,
+    "unitPrice": 0.4203637833468068,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Figurki Kapitana Ameryki i Czerwonego Hulka",
+    "price": 84.99,
+    "pieces": 202,
+    "unitPrice": 0.4207425742574257,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Bumblebee",
+    "price": 399.99,
+    "pieces": 950,
+    "unitPrice": 0.4210421052631579,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Żółty ruchomy żuraw",
+    "price": 469.99,
+    "pieces": 1116,
+    "unitPrice": 0.42113799283154124,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Niewidzialna ręka™",
+    "price": 234.99,
+    "pieces": 557,
+    "unitPrice": 0.4218850987432675,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Stacja kosmiczna i stanowisko startowe rakiety",
+    "price": 599.99,
+    "pieces": 1422,
+    "unitPrice": 0.4219338959212377,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Mechaniczna zbroja War Machine",
+    "price": 64.99,
+    "pieces": 154,
+    "unitPrice": 0.422012987012987,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Badawcza łódź podwodna",
+    "price": 174.99,
+    "pieces": 413,
+    "unitPrice": 0.4237046004842615,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Mario Kart™ – Zestaw Baby Peach i Grand Prix",
+    "price": 349.99,
+    "pieces": 823,
+    "unitPrice": 0.42526123936816523,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Figurka Iron Man MK5",
+    "price": 42.99,
+    "pieces": 101,
+    "unitPrice": 0.4256435643564357,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Chatka Królewny Śnieżki i siedmiu krasnoludków",
+    "price": 949.99,
+    "pieces": 2228,
+    "unitPrice": 0.426386894075404,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Pokój Paisley",
+    "price": 84.99,
+    "pieces": 199,
+    "unitPrice": 0.4270854271356784,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Dungeons & Dragons: Opowieść czerwonego smoka",
+    "price": 1599.99,
+    "pieces": 3745,
+    "unitPrice": 0.4272336448598131,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Szkielety dinozaurów: czaszka triceratopsa",
+    "price": 199.99,
+    "pieces": 468,
+    "unitPrice": 0.42732905982905983,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Potężny Bowser™",
+    "price": 1199.99,
+    "pieces": 2807,
+    "unitPrice": 0.4274991093694336,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Glinda, Elphaba i Nessarose na Shiz University",
+    "price": 129.99,
+    "pieces": 304,
+    "unitPrice": 0.4275986842105263,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Spotkanie w domku na Drzewie Przyjaźni",
+    "price": 299.99,
+    "pieces": 701,
+    "unitPrice": 0.4279457917261056,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Dom kultury w Heartlake",
+    "price": 649.99,
+    "pieces": 1513,
+    "unitPrice": 0.4296034368803701,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Park wodny w Heartlake",
+    "price": 349.99,
+    "pieces": 814,
+    "unitPrice": 0.42996314496314497,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Figurki Elphaby i Glindy",
+    "price": 239.99,
+    "pieces": 558,
+    "unitPrice": 0.43008960573476707,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Jeż Shadow",
+    "price": 309.99,
+    "pieces": 720,
+    "unitPrice": 0.43054166666666666,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Laweta z samochodami sportowymi",
+    "price": 429.99,
+    "pieces": 998,
+    "unitPrice": 0.4308517034068136,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Ras i burzowy superodrzutowiec Arina",
+    "price": 219.99,
+    "pieces": 510,
+    "unitPrice": 0.4313529411764706,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Szkolenie psów policyjnych w terenie",
+    "price": 84.99,
+    "pieces": 197,
+    "unitPrice": 0.4314213197969543,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Disney Hokus Pokus: Chata sióstr Sanderson",
+    "price": 999.99,
+    "pieces": 2316,
+    "unitPrice": 0.4317746113989637,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Ikony Hogwartu — edycja kolekcjonerska",
+    "price": 1299.99,
+    "pieces": 3010,
+    "unitPrice": 0.431890365448505,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Land Rover Classic Defender",
+    "price": 64.99,
+    "pieces": 150,
+    "unitPrice": 0.43326666666666663,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Każdy jest wspaniały",
+    "price": 149.99,
+    "pieces": 346,
+    "unitPrice": 0.4334971098265896,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Mobilna pączkarnia",
+    "price": 84.99,
+    "pieces": 196,
+    "unitPrice": 0.4336224489795918,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Impreza z karaoke",
+    "price": 84.99,
+    "pieces": 196,
+    "unitPrice": 0.4336224489795918,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Automat do gry Pac-Man",
+    "price": 1149.99,
+    "pieces": 2651,
+    "unitPrice": 0.43379479441720104,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Niebiański mech Erlanga",
+    "price": 349.99,
+    "pieces": 806,
+    "unitPrice": 0.43423076923076925,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Gokarty i kierowcy wyścigowi",
+    "price": 42.99,
+    "pieces": 99,
+    "unitPrice": 0.43424242424242426,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Przytulne domki na letnim obozie",
+    "price": 189.99,
+    "pieces": 437,
+    "unitPrice": 0.4347597254004577,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Ciężarówka ekipy Monkie Kida",
+    "price": 309.99,
+    "pieces": 712,
+    "unitPrice": 0.43537921348314607,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Tańczący Groot",
+    "price": 199.99,
+    "pieces": 459,
+    "unitPrice": 0.4357080610021787,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Park Świat Robotów z rollercoasterem",
+    "price": 429.99,
+    "pieces": 986,
+    "unitPrice": 0.4360953346855984,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Świątynia Smoczego Kamienia",
+    "price": 529.99,
+    "pieces": 1212,
+    "unitPrice": 0.43728547854785477,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Tygrysi mech Coopera i hot rod Zero",
+    "price": 439.99,
+    "pieces": 1006,
+    "unitPrice": 0.4373658051689861,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Wyścigowe Audi S1 E-tron Quattro",
+    "price": 119.99,
+    "pieces": 274,
+    "unitPrice": 0.43791970802919705,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Williams Racing FW14B i Nigel Mansell",
+    "price": 349.99,
+    "pieces": 799,
+    "unitPrice": 0.43803504380475594,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Ciężarówka z burgerami",
+    "price": 84.99,
+    "pieces": 194,
+    "unitPrice": 0.4380927835051546,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Policja z Więziennej Wyspy",
+    "price": 429.99,
+    "pieces": 980,
+    "unitPrice": 0.43876530612244896,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Dom grzybowej krowy",
+    "price": 219.99,
+    "pieces": 500,
+    "unitPrice": 0.43998000000000004,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Auto Iron Mana i Czarna Pantera kontra Czerwony Hulk",
+    "price": 129.99,
+    "pieces": 295,
+    "unitPrice": 0.4406440677966102,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Zamek Hogwart™: Zajęcia z eliksirów",
+    "price": 174.99,
+    "pieces": 397,
+    "unitPrice": 0.44078085642317383,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Przygoda na pokładzie Błędnego Rycerza",
+    "price": 219.99,
+    "pieces": 499,
+    "unitPrice": 0.4408617234468938,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Szczęki",
+    "price": 659.99,
+    "pieces": 1497,
+    "unitPrice": 0.440875083500334,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Zamek Hogwart™: Zajęcia z zaklęć i uroków",
+    "price": 89.99,
+    "pieces": 204,
+    "unitPrice": 0.44112745098039213,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "LOVE",
+    "price": 349.99,
+    "pieces": 791,
+    "unitPrice": 0.4424652338811631,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Statek piracki",
+    "price": 559.99,
+    "pieces": 1264,
+    "unitPrice": 0.44303006329113925,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Zbrojownia",
+    "price": 89.99,
+    "pieces": 203,
+    "unitPrice": 0.4433004926108374,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Tradycyjny zestaw szachów",
+    "price": 329.99,
+    "pieces": 743,
+    "unitPrice": 0.4441318977119785,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Dojo cienia Wilczej Maski",
+    "price": 529.99,
+    "pieces": 1190,
+    "unitPrice": 0.4453697478991597,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Bolid F1® McLaren Team MCL38",
+    "price": 119.99,
+    "pieces": 269,
+    "unitPrice": 0.44605947955390335,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Bolid F1® Aston Martin Aramco AMR24",
+    "price": 119.99,
+    "pieces": 269,
+    "unitPrice": 0.44605947955390335,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Bombowiec TIE™",
+    "price": 279.99,
+    "pieces": 625,
+    "unitPrice": 0.447984,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Ring w Leśnym dworze",
+    "price": 219.99,
+    "pieces": 491,
+    "unitPrice": 0.4480448065173116,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Cyclone kontra Metal Sonic",
+    "price": 129.99,
+    "pieces": 290,
+    "unitPrice": 0.44824137931034486,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Mario Kart™ – Toad i jego garaż",
+    "price": 174.99,
+    "pieces": 390,
+    "unitPrice": 0.4486923076923077,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Magiczny dom Madrigalów",
+    "price": 699.99,
+    "pieces": 1560,
+    "unitPrice": 0.4487115384615385,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Samolot i lotnisko w mieście Heartlake",
+    "price": 429.99,
+    "pieces": 958,
+    "unitPrice": 0.44884133611691024,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Bolid F1® Mercedes-AMG W15",
+    "price": 119.99,
+    "pieces": 267,
+    "unitPrice": 0.4494007490636704,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Land Rover Classic Defender 90",
+    "price": 1049.99,
+    "pieces": 2336,
+    "unitPrice": 0.4494820205479452,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Odwiedziny Isabelle",
+    "price": 174.99,
+    "pieces": 389,
+    "unitPrice": 0.4498457583547558,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Hybryda TIE Fightera i X-Winga",
+    "price": 479.99,
+    "pieces": 1063,
+    "unitPrice": 0.4515428033866416,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Chatka Ashy",
+    "price": 229.99,
+    "pieces": 509,
+    "unitPrice": 0.45184675834970534,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Nintendo Entertainment System™",
+    "price": 1199.99,
+    "pieces": 2646,
+    "unitPrice": 0.4535109599395314,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Samochód wyścigowy Mateo i Z-Bloba",
+    "price": 219.99,
+    "pieces": 485,
+    "unitPrice": 0.4535876288659794,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Bitwa na moście Netheru",
+    "price": 44.99,
+    "pieces": 99,
+    "unitPrice": 0.4544444444444445,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Bolid F1® Williams Racing FW46",
+    "price": 119.99,
+    "pieces": 263,
+    "unitPrice": 0.4562357414448669,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Imperialny transportowiec kontra zwiadowczy śmigacz Rebelii",
+    "price": 174.99,
+    "pieces": 383,
+    "unitPrice": 0.45689295039164496,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Smocze Spinjitzu — zestaw bitewny",
+    "price": 84.99,
+    "pieces": 186,
+    "unitPrice": 0.4569354838709677,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Nasze magiczne Encanto — Minidom",
+    "price": 84.99,
+    "pieces": 186,
+    "unitPrice": 0.4569354838709677,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Samochód wyścigowy ninja Kaia EVO",
+    "price": 42.99,
+    "pieces": 94,
+    "unitPrice": 0.4573404255319149,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Radiowóz",
+    "price": 42.99,
+    "pieces": 94,
+    "unitPrice": 0.4573404255319149,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Shadow the Hedgehog — ucieczka",
+    "price": 89.99,
+    "pieces": 196,
+    "unitPrice": 0.45913265306122447,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Rocket i Mały Groot",
+    "price": 259.99,
+    "pieces": 566,
+    "unitPrice": 0.4593462897526502,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Bus Bojowy",
+    "price": 439.99,
+    "pieces": 954,
+    "unitPrice": 0.46120545073375263,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Aragog w Zakazanym Lesie™",
+    "price": 89.99,
+    "pieces": 195,
+    "unitPrice": 0.4614871794871795,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Knuckles i świątynia Master Emerald",
+    "price": 149.99,
+    "pieces": 325,
+    "unitPrice": 0.46150769230769234,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Imprezowy autobus minionków",
+    "price": 174.99,
+    "pieces": 379,
+    "unitPrice": 0.46171503957783644,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Karetka pogotowia",
+    "price": 84.99,
+    "pieces": 184,
+    "unitPrice": 0.46190217391304345,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Figurka Batmana™ do zbudowania i batcykl",
+    "price": 329.99,
+    "pieces": 713,
+    "unitPrice": 0.4628190743338009,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Bolid F1® KICK Sauber Team C44",
+    "price": 119.99,
+    "pieces": 259,
+    "unitPrice": 0.4632818532818533,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Mechaniczna zbroja Batmana™",
+    "price": 64.99,
+    "pieces": 140,
+    "unitPrice": 0.4642142857142857,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Japoński kot szczęścia",
+    "price": 129.99,
+    "pieces": 280,
+    "unitPrice": 0.46425000000000005,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Wehikuł czasu z „Powrotu do przyszłości”",
+    "price": 869.99,
+    "pieces": 1872,
+    "unitPrice": 0.46473824786324786,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Bolid F1® BWT Alpine Team A524",
+    "price": 119.99,
+    "pieces": 258,
+    "unitPrice": 0.46507751937984493,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Powitanie w Emerald City",
+    "price": 439.99,
+    "pieces": 945,
+    "unitPrice": 0.4655978835978836,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Siedlisko lisów",
+    "price": 89.99,
+    "pieces": 193,
+    "unitPrice": 0.4662694300518134,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Sklep z akcesoriami dla zwierząt",
+    "price": 174.99,
+    "pieces": 375,
+    "unitPrice": 0.46664,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Mech w zbroi bojowej Zane’a",
+    "price": 42.99,
+    "pieces": 92,
+    "unitPrice": 0.4672826086956522,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Chryzantema",
+    "price": 129.99,
+    "pieces": 278,
+    "unitPrice": 0.467589928057554,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Onyx Cinder",
+    "price": 619.99,
+    "pieces": 1325,
+    "unitPrice": 0.46791698113207547,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Terenowy pojazd straży pożarnej",
+    "price": 234.99,
+    "pieces": 502,
+    "unitPrice": 0.46810756972111556,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Nowoczesny dom",
+    "price": 439.99,
+    "pieces": 939,
+    "unitPrice": 0.46857294994675186,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zasadzka w portalu do Netheru",
+    "price": 164.99,
+    "pieces": 352,
+    "unitPrice": 0.46872159090909093,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "X-Men: Instytut Xaviera",
+    "price": 1449.99,
+    "pieces": 3093,
+    "unitPrice": 0.4687972841901067,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "LEGO® SERIOUS PLAY® Zestaw początkowy",
+    "price": 109.99,
+    "pieces": 234,
+    "unitPrice": 0.470042735042735,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Samolot pasażerski",
+    "price": 429.99,
+    "pieces": 913,
+    "unitPrice": 0.4709638554216868,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Iron Spider-Man",
+    "price": 42.99,
+    "pieces": 91,
+    "unitPrice": 0.4724175824175824,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Logo MARVEL z minifigurkami",
+    "price": 439.99,
+    "pieces": 931,
+    "unitPrice": 0.47259935553168636,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Mała orchidea",
+    "price": 129.99,
+    "pieces": 274,
+    "unitPrice": 0.4744160583941606,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Zmierzch — dom Cullenów",
+    "price": 949.99,
+    "pieces": 2001,
+    "unitPrice": 0.4747576211894053,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Dzień Adopcji Zwierząt",
+    "price": 189.99,
+    "pieces": 400,
+    "unitPrice": 0.47497500000000004,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Gwiezdny Niszczyciel Imperium™",
+    "price": 739.99,
+    "pieces": 1555,
+    "unitPrice": 0.47587781350482317,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "NEOM McLaren Extreme E Race Car",
+    "price": 119.99,
+    "pieces": 252,
+    "unitPrice": 0.47615079365079366,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Wywrotka z przechylaną skrzynią",
+    "price": 219.99,
+    "pieces": 462,
+    "unitPrice": 0.4761688311688312,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zamek Peach — zestaw rozszerzający",
+    "price": 579.99,
+    "pieces": 1216,
+    "unitPrice": 0.4769654605263158,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Super Shadow kontra Biolizard",
+    "price": 199.99,
+    "pieces": 419,
+    "unitPrice": 0.47730310262529835,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Super Mario World™: Mario i Yoshi",
+    "price": 579.99,
+    "pieces": 1215,
+    "unitPrice": 0.477358024691358,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Sporty wodne na obozie kempingowym",
+    "price": 299.99,
+    "pieces": 628,
+    "unitPrice": 0.4776910828025478,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Bolid F1® Oracle Red Bull Racing RB20",
+    "price": 119.99,
+    "pieces": 251,
+    "unitPrice": 0.47804780876494024,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Wejście na pokład statku kosmicznego Tantive IV™",
+    "price": 239.99,
+    "pieces": 502,
+    "unitPrice": 0.47806772908366535,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Nora — edycja kolekcjonerska",
+    "price": 1149.99,
+    "pieces": 2405,
+    "unitPrice": 0.47816632016632016,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Hełm operatora AT-AT™",
+    "price": 349.99,
+    "pieces": 730,
+    "unitPrice": 0.4794383561643836,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Domek na plaży Lilo i Stitcha",
+    "price": 399.99,
+    "pieces": 834,
+    "unitPrice": 0.4796043165467626,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Droideka™",
+    "price": 279.99,
+    "pieces": 583,
+    "unitPrice": 0.4802572898799314,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Wilcza twierdza",
+    "price": 149.99,
+    "pieces": 312,
+    "unitPrice": 0.48073717948717953,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Tramwaj miejski ze stacją",
+    "price": 389.99,
+    "pieces": 811,
+    "unitPrice": 0.48087546239210854,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Wspinaczkowy mech ninja Kaia",
+    "price": 299.99,
+    "pieces": 623,
+    "unitPrice": 0.48152487961476725,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kopalnia w Badlandach",
+    "price": 259.99,
+    "pieces": 538,
+    "unitPrice": 0.4832527881040892,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Bolid F1® Visa Cash App RB VCARB 01",
+    "price": 119.99,
+    "pieces": 248,
+    "unitPrice": 0.4838306451612903,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Infiltrator Sithów Dartha Maula™",
+    "price": 309.99,
+    "pieces": 640,
+    "unitPrice": 0.48435937500000004,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Mechaniczna zbroja Venoma vs. Miles Morales",
+    "price": 64.99,
+    "pieces": 134,
+    "unitPrice": 0.485,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Radio w stylu retro",
+    "price": 439.99,
+    "pieces": 906,
+    "unitPrice": 0.4856401766004415,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Dom na wodzie przy Hogwarcie™",
+    "price": 169.99,
+    "pieces": 350,
+    "unitPrice": 0.48568571428571433,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Radość z Pharrellem Williamsem",
+    "price": 469.99,
+    "pieces": 966,
+    "unitPrice": 0.4865320910973085,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Diorama: Wyścig ścigaczy w Mos Espa™",
+    "price": 349.99,
+    "pieces": 718,
+    "unitPrice": 0.48745125348189416,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Helikopter badaczy dżungli w bazie",
+    "price": 429.99,
+    "pieces": 881,
+    "unitPrice": 0.4880703745743473,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Modułowy galaktyczny statek kosmiczny",
+    "price": 349.99,
+    "pieces": 717,
+    "unitPrice": 0.4881311018131102,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Mario Kart™ – Yoshi Bike",
+    "price": 64.99,
+    "pieces": 133,
+    "unitPrice": 0.48864661654135333,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Krążownik szturmowy typu Acclamator",
+    "price": 219.99,
+    "pieces": 450,
+    "unitPrice": 0.48886666666666667,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Samochód wyścigowy McLaren Formula 1 wersja 2023",
+    "price": 119.99,
+    "pieces": 245,
+    "unitPrice": 0.4897551020408163,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Spider-Man vs. Sandman: ostateczna bitwa",
+    "price": 169.99,
+    "pieces": 347,
+    "unitPrice": 0.4898847262247839,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "PEUGEOT 9X8 24H Le Mans Hybrid Hypercar",
+    "price": 869.99,
+    "pieces": 1775,
+    "unitPrice": 0.4901352112676056,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Sokół Millennium™",
+    "price": 3699.99,
+    "pieces": 7541,
+    "unitPrice": 0.4906497811961278,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Smok wodny Nyi EVO",
+    "price": 84.99,
+    "pieces": 173,
+    "unitPrice": 0.491271676300578,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Gwiezdny superniszczyciel typu Executor™",
+    "price": 309.99,
+    "pieces": 630,
+    "unitPrice": 0.49204761904761907,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Smoczątko Riyu",
+    "price": 64.99,
+    "pieces": 132,
+    "unitPrice": 0.4923484848484848,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Mroczny Sokół Millennium",
+    "price": 779.99,
+    "pieces": 1579,
+    "unitPrice": 0.4939772007599747,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Smok chaosu Kiełogrzmot",
+    "price": 329.99,
+    "pieces": 668,
+    "unitPrice": 0.493997005988024,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Leif i jego karawan oraz sklep ogrodniczy",
+    "price": 129.99,
+    "pieces": 263,
+    "unitPrice": 0.49425855513307987,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Figurka Iron Spider-Mana",
+    "price": 149.99,
+    "pieces": 303,
+    "unitPrice": 0.49501650165016503,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Bolid F1® MoneyGram Haas Team VF-24",
+    "price": 119.99,
+    "pieces": 242,
+    "unitPrice": 0.4958264462809917,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Domek na drzewie na obozie kempingowym",
+    "price": 559.99,
+    "pieces": 1128,
+    "unitPrice": 0.4964450354609929,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "NASA Apollo — pojazd LRV",
+    "price": 949.99,
+    "pieces": 1913,
+    "unitPrice": 0.49659696811291165,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Plac zabaw dla świnek morskich",
+    "price": 42.99,
+    "pieces": 86,
+    "unitPrice": 0.4998837209302326,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Mercedes-AMG F1 W14 E Performance Pull-Back",
+    "price": 119.99,
+    "pieces": 240,
+    "unitPrice": 0.49995833333333334,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Porsche 911",
+    "price": 729.99,
+    "pieces": 1458,
+    "unitPrice": 0.500679012345679,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "McLaren P1™",
+    "price": 1949.99,
+    "pieces": 3893,
+    "unitPrice": 0.5008964808630876,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Dziewięciogłowa bestia",
+    "price": 379.99,
+    "pieces": 757,
+    "unitPrice": 0.5019682959048877,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Turniej Trójmagiczny: Przybycie",
+    "price": 619.99,
+    "pieces": 1229,
+    "unitPrice": 0.5044670463791701,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Bez granic: tor z rampami dla wyścigówek",
+    "price": 219.99,
+    "pieces": 436,
+    "unitPrice": 0.5045642201834862,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "McLaren MP4/4 i Ayrton Senna",
+    "price": 349.99,
+    "pieces": 693,
+    "unitPrice": 0.5050360750360751,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zamek Nocturnia",
+    "price": 879.99,
+    "pieces": 1742,
+    "unitPrice": 0.5051607347876005,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Strażacki helikopter ratunkowy",
+    "price": 42.99,
+    "pieces": 85,
+    "unitPrice": 0.505764705882353,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Arcysmok skupienia",
+    "price": 439.99,
+    "pieces": 869,
+    "unitPrice": 0.5063176064441888,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Rodzinna rezydencja Gru i minionków",
+    "price": 439.99,
+    "pieces": 868,
+    "unitPrice": 0.5069009216589861,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zamek Hogwart™: Wielka Sala",
+    "price": 879.99,
+    "pieces": 1732,
+    "unitPrice": 0.5080773672055428,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Sonic i biwakowa bitwa",
+    "price": 89.99,
+    "pieces": 177,
+    "unitPrice": 0.5084180790960452,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Farma z wiatrakiem",
+    "price": 234.99,
+    "pieces": 462,
+    "unitPrice": 0.5086363636363637,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "NEOM McLaren Formula E Race Car",
+    "price": 229.99,
+    "pieces": 452,
+    "unitPrice": 0.5088274336283186,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Sanie Świętego Mikołaja",
+    "price": 174.99,
+    "pieces": 343,
+    "unitPrice": 0.5101749271137026,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Kajakowa przygoda Vaiany",
+    "price": 269.99,
+    "pieces": 529,
+    "unitPrice": 0.5103780718336484,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Optimus Prime",
+    "price": 769.99,
+    "pieces": 1508,
+    "unitPrice": 0.5106034482758621,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Spider-Man kontra muscle car Venoma",
+    "price": 129.99,
+    "pieces": 254,
+    "unitPrice": 0.5117716535433071,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Lodowy motocykl Zane’a",
+    "price": 42.99,
+    "pieces": 84,
+    "unitPrice": 0.5117857142857143,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Plażowy skuter wodny",
+    "price": 42.99,
+    "pieces": 84,
+    "unitPrice": 0.5117857142857143,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Pociąg Orient Express",
+    "price": 1299.99,
+    "pieces": 2540,
+    "unitPrice": 0.5118070866141732,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Domek na plaży żółwi",
+    "price": 119.99,
+    "pieces": 234,
+    "unitPrice": 0.5127777777777778,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Furgonetka ratowników plażowych",
+    "price": 109.99,
+    "pieces": 214,
+    "unitPrice": 0.5139719626168224,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Koń i lecznica dla zwierząt",
+    "price": 219.99,
+    "pieces": 428,
+    "unitPrice": 0.5139953271028037,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Diabolina jako smok",
+    "price": 299.99,
+    "pieces": 583,
+    "unitPrice": 0.5145626072041166,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kosmiczna kolejka górska",
+    "price": 449.99,
+    "pieces": 874,
+    "unitPrice": 0.514862700228833,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Ferrari Daytona SP3",
+    "price": 1949.99,
+    "pieces": 3778,
+    "unitPrice": 0.5161434621492853,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "F1® Garaż i bolidy Mercedes-AMG i Alpine",
+    "price": 349.99,
+    "pieces": 678,
+    "unitPrice": 0.5162094395280236,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Mario Kart™ – Standard Kart",
+    "price": 89.99,
+    "pieces": 174,
+    "unitPrice": 0.517183908045977,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Monster Jam™ ThunderROARus™ z napędem typu pull-back",
+    "price": 119.99,
+    "pieces": 232,
+    "unitPrice": 0.5171982758620689,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "TIE Interceptor™",
+    "price": 999.99,
+    "pieces": 1931,
+    "unitPrice": 0.5178612118073537,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Lamborghini Countach 5000 Quattrovalvole",
+    "price": 779.99,
+    "pieces": 1506,
+    "unitPrice": 0.517921646746348,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Zwierzaki ze snu Izzie",
+    "price": 169.99,
+    "pieces": 328,
+    "unitPrice": 0.5182621951219513,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Diuna — Atreides Royal Ornithopter",
+    "price": 709.99,
+    "pieces": 1369,
+    "unitPrice": 0.5186194302410518,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Figurka Wolverine’a do zbudowania",
+    "price": 169.99,
+    "pieces": 327,
+    "unitPrice": 0.5198470948012233,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Great Deku Tree 2 w 1",
+    "price": 1299.99,
+    "pieces": 2500,
+    "unitPrice": 0.519996,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Gwiezdny Niszczyciel typu Venator",
+    "price": 2799.99,
+    "pieces": 5374,
+    "unitPrice": 0.5210253070338667,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Luksusowe Lamborghini Lambo V12 Vision GT",
+    "price": 119.99,
+    "pieces": 230,
+    "unitPrice": 0.521695652173913,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Ostateczne starcie Spider-Mana",
+    "price": 469.99,
+    "pieces": 900,
+    "unitPrice": 0.5222111111111111,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Strażacki samolot ratunkowy",
+    "price": 249.99,
+    "pieces": 478,
+    "unitPrice": 0.5229916317991632,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Wyprawa do pancernikowej kopalni",
+    "price": 129.99,
+    "pieces": 247,
+    "unitPrice": 0.5262753036437248,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Lamborghini Sián FKP 37",
+    "price": 1949.99,
+    "pieces": 3696,
+    "unitPrice": 0.527594696969697,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Thor kontra figurka konstrukcyjna Surtura",
+    "price": 129.99,
+    "pieces": 245,
+    "unitPrice": 0.5305714285714286,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Szkatułka na biżuterię z Królewną Śnieżką",
+    "price": 189.99,
+    "pieces": 358,
+    "unitPrice": 0.5306983240223464,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Hełm Mandalorianina™",
+    "price": 309.99,
+    "pieces": 584,
+    "unitPrice": 0.530804794520548,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Duch i Upiór II",
+    "price": 739.99,
+    "pieces": 1394,
+    "unitPrice": 0.5308393113342899,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Myśliwiec Jedi Obi-Wana Kenobiego™",
+    "price": 149.99,
+    "pieces": 282,
+    "unitPrice": 0.5318794326241135,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Smok Kresu i statek Kresu",
+    "price": 349.99,
+    "pieces": 657,
+    "unitPrice": 0.5327092846270929,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Pokój Wednesday i Enid",
+    "price": 399.99,
+    "pieces": 750,
+    "unitPrice": 0.53332,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Tantive IV™",
+    "price": 349.99,
+    "pieces": 654,
+    "unitPrice": 0.5351529051987768,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Mandragora",
+    "price": 309.99,
+    "pieces": 579,
+    "unitPrice": 0.5353886010362694,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Wspomnienia z podróży",
+    "price": 659.99,
+    "pieces": 1231,
+    "unitPrice": 0.5361413484971568,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Krążownik typu Home One",
+    "price": 299.99,
+    "pieces": 559,
+    "unitPrice": 0.536654740608229,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kwiatek Pirania",
+    "price": 289.99,
+    "pieces": 540,
+    "unitPrice": 0.5370185185185186,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zamek Hogwart™: lekcja latania na miotle",
+    "price": 349.99,
+    "pieces": 651,
+    "unitPrice": 0.5376190476190477,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Sklepy Ollivandera™ i Madame Malkin",
+    "price": 399.99,
+    "pieces": 744,
+    "unitPrice": 0.5376209677419355,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Myśliwiec X-Wing™",
+    "price": 1049.99,
+    "pieces": 1953,
+    "unitPrice": 0.5376292882744496,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Przygoda księżniczki Disneya na targu",
+    "price": 439.99,
+    "pieces": 817,
+    "unitPrice": 0.5385434516523868,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Ekspres do Hogwartu™ i stacja w Hogsmeade™",
+    "price": 579.99,
+    "pieces": 1074,
+    "unitPrice": 0.5400279329608939,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Skrzynia ze skarbami Arielki",
+    "price": 199.99,
+    "pieces": 370,
+    "unitPrice": 0.5405135135135135,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Atak balonowego Ghasta na wioskę",
+    "price": 299.99,
+    "pieces": 555,
+    "unitPrice": 0.5405225225225225,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Róże",
+    "price": 64.99,
+    "pieces": 120,
+    "unitPrice": 0.5415833333333333,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Mech Supermana™ kontra Lex Luthor™",
+    "price": 64.99,
+    "pieces": 120,
+    "unitPrice": 0.5415833333333333,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Knuckles i mech-strażnik",
+    "price": 149.99,
+    "pieces": 276,
+    "unitPrice": 0.5434420289855073,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Komnata prób",
+    "price": 174.99,
+    "pieces": 322,
+    "unitPrice": 0.5434472049689442,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Motocykl Kawasaki Ninja H2R",
+    "price": 349.99,
+    "pieces": 643,
+    "unitPrice": 0.5443079315707621,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "C-3PO™",
+    "price": 619.99,
+    "pieces": 1138,
+    "unitPrice": 0.5448066783831284,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Barka Jabby™",
+    "price": 2149.99,
+    "pieces": 3943,
+    "unitPrice": 0.5452675627694649,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Maszyna latająca Leonarda da Vinci",
+    "price": 269.99,
+    "pieces": 493,
+    "unitPrice": 0.5476470588235294,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Rezerwat zwierząt Antonia",
+    "price": 169.99,
+    "pieces": 310,
+    "unitPrice": 0.5483548387096775,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Zabawy na świeżym powietrzu Bunnie",
+    "price": 89.99,
+    "pieces": 164,
+    "unitPrice": 0.5487195121951219,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Motocykl Ducati Panigale V4 S",
+    "price": 879.99,
+    "pieces": 1603,
+    "unitPrice": 0.5489644416718653,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Prom kosmiczny Jedi T-6 Ahsoki Tano",
+    "price": 329.99,
+    "pieces": 601,
+    "unitPrice": 0.5490682196339435,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Sowiarnia w Hogwarcie™",
+    "price": 199.99,
+    "pieces": 364,
+    "unitPrice": 0.5494230769230769,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Monster Jam™ DIGatron™",
+    "price": 119.99,
+    "pieces": 218,
+    "unitPrice": 0.5504128440366972,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Jacht Emirates Team New Zealand AC75",
+    "price": 529.99,
+    "pieces": 962,
+    "unitPrice": 0.5509251559251559,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Zestaw bitewny z mechem Jaya",
+    "price": 42.99,
+    "pieces": 78,
+    "unitPrice": 0.5511538461538462,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Walec budowlany",
+    "price": 42.99,
+    "pieces": 78,
+    "unitPrice": 0.5511538461538462,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Mikromyśliwiec Y-Wing™ kapitana Rexa",
+    "price": 54.99,
+    "pieces": 99,
+    "unitPrice": 0.5554545454545454,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Rejs dookoła wyspy Kapp’n",
+    "price": 129.99,
+    "pieces": 233,
+    "unitPrice": 0.5578969957081545,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Able Sisters i sklep odzieżowy",
+    "price": 179.99,
+    "pieces": 322,
+    "unitPrice": 0.5589751552795031,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Papugowe domki",
+    "price": 299.99,
+    "pieces": 535,
+    "unitPrice": 0.5607289719626168,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Smoczy mistrz Egalt",
+    "price": 299.99,
+    "pieces": 532,
+    "unitPrice": 0.563890977443609,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Monster truck Hulka kontra Thanos",
+    "price": 129.99,
+    "pieces": 229,
+    "unitPrice": 0.5676419213973799,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Władca pierścieni: Shire™",
+    "price": 1149.99,
+    "pieces": 2017,
+    "unitPrice": 0.5701487357461577,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Suknie Diaboliny i Cruelli De Mon",
+    "price": 299.99,
+    "pieces": 524,
+    "unitPrice": 0.5725,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "BMW M 1000 RR",
+    "price": 1099.99,
+    "pieces": 1921,
+    "unitPrice": 0.5726132222800625,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Wyścigówka Spider-Mana i Zielony Goblin",
+    "price": 129.99,
+    "pieces": 227,
+    "unitPrice": 0.5726431718061674,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Maszyna krocząca AT-TE™",
+    "price": 619.99,
+    "pieces": 1082,
+    "unitPrice": 0.5730036968576709,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Pustynna wyprawa Steve’a",
+    "price": 42.99,
+    "pieces": 75,
+    "unitPrice": 0.5732,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Burzowa wioska Dragonów",
+    "price": 174.99,
+    "pieces": 305,
+    "unitPrice": 0.5737377049180328,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Myśliwiec rycerza Jedi Boba",
+    "price": 174.99,
+    "pieces": 305,
+    "unitPrice": 0.5737377049180328,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Przygoda z surfującymi psami i skuterem",
+    "price": 64.99,
+    "pieces": 113,
+    "unitPrice": 0.5751327433628318,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Salon fryzjerski i sklep z ozdobami",
+    "price": 199.99,
+    "pieces": 347,
+    "unitPrice": 0.5763400576368877,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Obserwacja gwiazd z Celeste",
+    "price": 44.99,
+    "pieces": 78,
+    "unitPrice": 0.5767948717948718,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Payakan the Tulkun i mech-krab",
+    "price": 439.99,
+    "pieces": 761,
+    "unitPrice": 0.5781734559789751,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Mercedes-AMG F1 W14 E Performance",
+    "price": 949.99,
+    "pieces": 1643,
+    "unitPrice": 0.5782045039561777,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Przygoda ze skimwingiem",
+    "price": 149.99,
+    "pieces": 259,
+    "unitPrice": 0.5791119691119692,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Lot z Dodo Airlines",
+    "price": 169.99,
+    "pieces": 292,
+    "unitPrice": 0.5821575342465753,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Warbird Rocketa vs. Ronan",
+    "price": 169.99,
+    "pieces": 290,
+    "unitPrice": 0.5861724137931035,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Multiwersum: Miles Morales kontra Spot",
+    "price": 219.99,
+    "pieces": 375,
+    "unitPrice": 0.58664,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zamek Kopciuszka i kareta",
+    "price": 349.99,
+    "pieces": 596,
+    "unitPrice": 0.5872315436241611,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Żabi domek",
+    "price": 234.99,
+    "pieces": 400,
+    "unitPrice": 0.587475,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Ucieczka na śmigaczu BARC™",
+    "price": 129.99,
+    "pieces": 221,
+    "unitPrice": 0.5881900452488689,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Łódź strażacka",
+    "price": 84.99,
+    "pieces": 144,
+    "unitPrice": 0.5902083333333333,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Samochód wyścigowy McLaren Formula 1™",
+    "price": 849.99,
+    "pieces": 1434,
+    "unitPrice": 0.5927405857740586,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Batman™ z batmobilem kontra Harley Quinn™ i Mr. Freeze™",
+    "price": 259.99,
+    "pieces": 435,
+    "unitPrice": 0.5976781609195403,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kapitan Ameryka: Wojna bohaterów — bitwa",
+    "price": 439.99,
+    "pieces": 736,
+    "unitPrice": 0.5978125,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kanonierka Gwardii Coruscańskiej™",
+    "price": 649.99,
+    "pieces": 1083,
+    "unitPrice": 0.6001754385964913,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Myśliwiec ARC-170",
+    "price": 299.99,
+    "pieces": 497,
+    "unitPrice": 0.6036016096579477,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zestaw bitewny z żołnierzem armii klonów™ i droidem bojowym™",
+    "price": 129.99,
+    "pieces": 215,
+    "unitPrice": 0.6046046511627907,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Pojedynek Paza Vizsli™ i Moffa Gideona™",
+    "price": 174.99,
+    "pieces": 289,
+    "unitPrice": 0.6055017301038063,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Wyspa dla zwierząt Amy",
+    "price": 234.99,
+    "pieces": 388,
+    "unitPrice": 0.6056443298969072,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Mech Spider-Mana kontra Anti-Venom",
+    "price": 64.99,
+    "pieces": 107,
+    "unitPrice": 0.6073831775700934,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Samochód wyścigowy Lloyda z napędem typu pull-back",
+    "price": 109.99,
+    "pieces": 181,
+    "unitPrice": 0.6076795580110497,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Spider-Man Kalendarz adwentowy 2024",
+    "price": 149.99,
+    "pieces": 246,
+    "unitPrice": 0.6097154471544716,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Bolid F1 Oracle Red Bull Racing RB20",
+    "price": 999.99,
+    "pieces": 1639,
+    "unitPrice": 0.6101220256253813,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Super Sonic kontra Egg Drillster",
+    "price": 359.99,
+    "pieces": 590,
+    "unitPrice": 0.6101525423728814,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Tails i przygoda na łodzi",
+    "price": 239.99,
+    "pieces": 393,
+    "unitPrice": 0.6106615776081425,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zestaw wyścigówek: pizza kontra wóz strażacki",
+    "price": 42.99,
+    "pieces": 70,
+    "unitPrice": 0.6141428571428572,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Zestaw wyścigówek: samolot kontra łóżko szpitalne",
+    "price": 42.99,
+    "pieces": 70,
+    "unitPrice": 0.6141428571428572,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Odkrycie ilu",
+    "price": 109.99,
+    "pieces": 179,
+    "unitPrice": 0.6144692737430167,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Nook's Cranny i domek Rosie",
+    "price": 329.99,
+    "pieces": 535,
+    "unitPrice": 0.616803738317757,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Pustynny patrol złosadników",
+    "price": 64.99,
+    "pieces": 105,
+    "unitPrice": 0.6189523809523809,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Mech bojowy Arina",
+    "price": 64.99,
+    "pieces": 104,
+    "unitPrice": 0.6249038461538461,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Laboratorium Iron Mana: Zbrojownia",
+    "price": 239.99,
+    "pieces": 384,
+    "unitPrice": 0.6249739583333334,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Pustynna barka i jama sarlacca",
+    "price": 349.99,
+    "pieces": 558,
+    "unitPrice": 0.6272222222222222,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Pojedynek Ahsoki Tano na Peridei",
+    "price": 239.99,
+    "pieces": 382,
+    "unitPrice": 0.6282460732984293,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Tumbler Batmana™ kontra Dwie Twarze i Joker™",
+    "price": 269.99,
+    "pieces": 429,
+    "unitPrice": 0.6293473193473194,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zmechanizowana latarnia",
+    "price": 1299.99,
+    "pieces": 2065,
+    "unitPrice": 0.6295351089588378,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Maska Spider-Mana",
+    "price": 309.99,
+    "pieces": 487,
+    "unitPrice": 0.63652977412731,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "F1® Kierowca i bolid McLaren",
+    "price": 54.99,
+    "pieces": 86,
+    "unitPrice": 0.6394186046511628,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Pokój zabaw młodszej siostry Aliyi",
+    "price": 79.99,
+    "pieces": 125,
+    "unitPrice": 0.6399199999999999,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Mech Iron Mana kontra Ultron",
+    "price": 64.99,
+    "pieces": 101,
+    "unitPrice": 0.6434653465346534,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Avengers kontra Lewiatan",
+    "price": 224.99,
+    "pieces": 347,
+    "unitPrice": 0.6483861671469741,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Koncert K.K. na placu",
+    "price": 359.99,
+    "pieces": 550,
+    "unitPrice": 0.6545272727272727,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Piknik w domu Mario — zestaw rozszerzający",
+    "price": 169.99,
+    "pieces": 259,
+    "unitPrice": 0.6563320463320463,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Burzowy jeździec-mech Kaia",
+    "price": 219.99,
+    "pieces": 333,
+    "unitPrice": 0.6606306306306307,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zielony leśny smok Lloyda",
+    "price": 84.99,
+    "pieces": 128,
+    "unitPrice": 0.663984375,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Planeta Ziemia i Księżyc na orbicie",
+    "price": 349.99,
+    "pieces": 526,
+    "unitPrice": 0.6653802281368821,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Statek kosmiczny i odkrywanie asteroidy",
+    "price": 84.99,
+    "pieces": 126,
+    "unitPrice": 0.6745238095238095,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Yamaha MT-10 SP",
+    "price": 999.99,
+    "pieces": 1478,
+    "unitPrice": 0.6765832205683356,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Pociąg towarowy",
+    "price": 829.99,
+    "pieces": 1226,
+    "unitPrice": 0.6769902120717781,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Wielofunkcyjny pojazd ninja",
+    "price": 389.99,
+    "pieces": 576,
+    "unitPrice": 0.6770659722222222,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Rękawica Nieskończoności",
+    "price": 399.99,
+    "pieces": 590,
+    "unitPrice": 0.6779491525423729,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Aparat Polaroid OneStep SX-70",
+    "price": 349.99,
+    "pieces": 516,
+    "unitPrice": 0.6782751937984496,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Myśliwiec N-1™ Mandalorianina",
+    "price": 279.99,
+    "pieces": 412,
+    "unitPrice": 0.6795873786407767,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Dinomisje: ciężarówka do transportu allozaura",
+    "price": 399.99,
+    "pieces": 588,
+    "unitPrice": 0.6802551020408163,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zamek króla Magnifico",
+    "price": 419.99,
+    "pieces": 613,
+    "unitPrice": 0.6851386623164764,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Pościg Spina za Electro w dinopojeździe",
+    "price": 84.99,
+    "pieces": 124,
+    "unitPrice": 0.6854032258064515,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Lotniskowiec Avengersów",
+    "price": 349.99,
+    "pieces": 509,
+    "unitPrice": 0.6876031434184676,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Interceptor™ Jedi Ahsoki",
+    "price": 199.99,
+    "pieces": 290,
+    "unitPrice": 0.6896206896551724,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Dinomisje: odkrycie stegozaura",
+    "price": 289.99,
+    "pieces": 420,
+    "unitPrice": 0.6904523809523809,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kreatywna walizka plażowa",
+    "price": 129.99,
+    "pieces": 188,
+    "unitPrice": 0.691436170212766,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Zamek Hogwart™: Klub pojedynków",
+    "price": 109.99,
+    "pieces": 158,
+    "unitPrice": 0.696139240506329,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Lodowy pałac Elzy",
+    "price": 439.99,
+    "pieces": 630,
+    "unitPrice": 0.6983968253968255,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Koci domek Gabi",
+    "price": 349.99,
+    "pieces": 498,
+    "unitPrice": 0.7027911646586346,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Iron Man i Iron Legion kontra żołnierz Hydry",
+    "price": 94.99,
+    "pieces": 135,
+    "unitPrice": 0.7036296296296296,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Samochód do pielęgnacji psów",
+    "price": 42.99,
+    "pieces": 60,
+    "unitPrice": 0.7165,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Avengers: Czas Ultrona",
+    "price": 439.99,
+    "pieces": 613,
+    "unitPrice": 0.7177650897226754,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Czerwony traktor z przyczepą i owcą",
+    "price": 84.99,
+    "pieces": 116,
+    "unitPrice": 0.7326724137931034,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Kraina lodu — Zamek w Arendelle",
+    "price": 129.99,
+    "pieces": 177,
+    "unitPrice": 0.734406779661017,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Bolid F1 Ferrari SF-24",
+    "price": 999.99,
+    "pieces": 1361,
+    "unitPrice": 0.7347465099191771,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Zestaw bitewny – żołnierze-klony z 501. legionu™",
+    "price": 89.99,
+    "pieces": 119,
+    "unitPrice": 0.7562184873949579,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Płyty drogowe",
+    "price": 84.99,
+    "pieces": 112,
+    "unitPrice": 0.7588392857142857,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Smoczy spinner Spinjitzu Sory",
+    "price": 42.99,
+    "pieces": 56,
+    "unitPrice": 0.7676785714285714,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Mówiąca Tiara Przydziału™",
+    "price": 439.99,
+    "pieces": 561,
+    "unitPrice": 0.7842959001782531,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Smoczy spinner Spinjitzu Kaia",
+    "price": 42.99,
+    "pieces": 54,
+    "unitPrice": 0.7961111111111111,
+    "category": "price-under-50-pln"
+  },
+  {
+    "name": "Łódź badacza Arktyki",
+    "price": 649.99,
+    "pieces": 815,
+    "unitPrice": 0.7975337423312884,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Żółta ładowarka kołowa",
+    "price": 64.99,
+    "pieces": 81,
+    "unitPrice": 0.8023456790123457,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Łazik terenowy ninja Arina",
+    "price": 214.99,
+    "pieces": 267,
+    "unitPrice": 0.8052059925093633,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Minionki i bananowóz",
+    "price": 109.99,
+    "pieces": 136,
+    "unitPrice": 0.80875,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Przyczepka dla konia i kucyka",
+    "price": 84.99,
+    "pieces": 105,
+    "unitPrice": 0.8094285714285714,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Audi RS Q e-tron",
+    "price": 739.99,
+    "pieces": 914,
+    "unitPrice": 0.809617067833698,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Samochód pomocy drogowej i naprawa sportowego auta",
+    "price": 84.99,
+    "pieces": 101,
+    "unitPrice": 0.8414851485148515,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Sala balowa Gabi",
+    "price": 214.99,
+    "pieces": 252,
+    "unitPrice": 0.8531349206349207,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Nya i Arin — bitwa na grzbiecie małego smoka",
+    "price": 134.99,
+    "pieces": 157,
+    "unitPrice": 0.8598089171974523,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Zasadzka na Mandalorze™ — zestaw bitewny",
+    "price": 94.99,
+    "pieces": 109,
+    "unitPrice": 0.8714678899082569,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Samochód wyścigowy Porsche GT4 e-Performance",
+    "price": 739.99,
+    "pieces": 834,
+    "unitPrice": 0.8872781774580336,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Przygoda na sankach Anny",
+    "price": 174.99,
+    "pieces": 192,
+    "unitPrice": 0.9114062500000001,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Ciężarówki i dźwig z kulą wyburzeniową",
+    "price": 214.99,
+    "pieces": 235,
+    "unitPrice": 0.9148510638297873,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Ekspresowy pociąg pasażerski",
+    "price": 699.99,
+    "pieces": 764,
+    "unitPrice": 0.916217277486911,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Kryształowa grota Arielki",
+    "price": 129.99,
+    "pieces": 141,
+    "unitPrice": 0.9219148936170214,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "F1® Bolidy Williams Racing i Haas F1®",
+    "price": 84.99,
+    "pieces": 92,
+    "unitPrice": 0.9238043478260869,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Furgonetka z lodami w mieście Heartlake",
+    "price": 84.99,
+    "pieces": 92,
+    "unitPrice": 0.9238043478260869,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Iron Man z motocyklem i Hulk",
+    "price": 64.99,
+    "pieces": 68,
+    "unitPrice": 0.955735294117647,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Misja ratunkowa zespołu Spidey’ego w dinoterenówce",
+    "price": 129.99,
+    "pieces": 136,
+    "unitPrice": 0.9558088235294119,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "LEGO® SERIOUS PLAY® Powiązania",
+    "price": 2399.99,
+    "pieces": 2455,
+    "unitPrice": 0.9775926680244398,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Gracik",
+    "price": 419.99,
+    "pieces": 420,
+    "unitPrice": 0.9999761904761905,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Żuraw gąsienicowy Liebherr LR 13000",
+    "price": 2899.99,
+    "pieces": 2883,
+    "unitPrice": 1.005893166840097,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Przygody z interaktywną figurką LEGO® Mario™",
+    "price": 219.99,
+    "pieces": 218,
+    "unitPrice": 1.0091284403669725,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Kiciklubik Uszko Gabi",
+    "price": 169.99,
+    "pieces": 165,
+    "unitPrice": 1.0302424242424244,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Odrzutowiec X-Menów",
+    "price": 369.99,
+    "pieces": 359,
+    "unitPrice": 1.0306128133704735,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Wóz strażacki z drabiną",
+    "price": 84.99,
+    "pieces": 82,
+    "unitPrice": 1.0364634146341463,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Przygody z interaktywną figurką LEGO® Luigi™",
+    "price": 219.99,
+    "pieces": 210,
+    "unitPrice": 1.0475714285714286,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Przygody z interaktywną figurką LEGO® Peach™",
+    "price": 219.99,
+    "pieces": 208,
+    "unitPrice": 1.0576442307692309,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "LEGO® SERIOUS PLAY® Tożsamość i krajobraz",
+    "price": 2999.99,
+    "pieces": 2808,
+    "unitPrice": 1.068372507122507,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Kapitan Ameryka kontra Czerwony Hulk — bitwa",
+    "price": 239.99,
+    "pieces": 223,
+    "unitPrice": 1.0761883408071748,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Prace ręczne z Tekturzątkiem",
+    "price": 64.99,
+    "pieces": 60,
+    "unitPrice": 1.0831666666666666,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Świątynia Spinjitzu ninja",
+    "price": 174.99,
+    "pieces": 158,
+    "unitPrice": 1.1075316455696202,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Lodowy zamek Elzy",
+    "price": 189.99,
+    "pieces": 163,
+    "unitPrice": 1.1655828220858897,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Scena muzyczna Arielki",
+    "price": 69.99,
+    "pieces": 60,
+    "unitPrice": 1.1664999999999999,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Siedziba główna Pajęczej Drużyny",
+    "price": 234.99,
+    "pieces": 193,
+    "unitPrice": 1.2175647668393783,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Centrum ratunkowe dla małych dinozaurów",
+    "price": 174.99,
+    "pieces": 139,
+    "unitPrice": 1.2589208633093525,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Smocza bitwa Kaia",
+    "price": 159.99,
+    "pieces": 120,
+    "unitPrice": 1.33325,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Zabawa z alfabetem Braille’a — niemiecki",
+    "price": 389.99,
+    "pieces": 287,
+    "unitPrice": 1.358850174216028,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zabawa z alfabetem Braille’a — hiszpański",
+    "price": 389.99,
+    "pieces": 287,
+    "unitPrice": 1.358850174216028,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zabawa z alfabetem Braille’a — włoski",
+    "price": 389.99,
+    "pieces": 287,
+    "unitPrice": 1.358850174216028,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zabawa z alfabetem Braille’a — angielski",
+    "price": 389.99,
+    "pieces": 287,
+    "unitPrice": 1.358850174216028,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zabawa z alfabetem Braille’a — francuski",
+    "price": 389.99,
+    "pieces": 287,
+    "unitPrice": 1.358850174216028,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zestaw LEGO® Education BricQ Motion Prime",
+    "price": 769.99,
+    "pieces": 564,
+    "unitPrice": 1.3652304964539008,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Myśliwiec N-1 Mando i Grogu",
+    "price": 129.99,
+    "pieces": 92,
+    "unitPrice": 1.4129347826086958,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Batman™ i Batmobil kontra Mr. Freeze™",
+    "price": 89.99,
+    "pieces": 63,
+    "unitPrice": 1.4284126984126984,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Świątynia Jedi™ na Tenoo",
+    "price": 184.99,
+    "pieces": 124,
+    "unitPrice": 1.4918548387096775,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Bitwa Spidey’ego i Gobby’ego przy domku na drzewie",
+    "price": 239.99,
+    "pieces": 143,
+    "unitPrice": 1.6782517482517483,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Karmazynowy Jastrząb",
+    "price": 234.99,
+    "pieces": 136,
+    "unitPrice": 1.7278676470588237,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Hulkbuster Iron Mana vs. Thanos",
+    "price": 119.99,
+    "pieces": 66,
+    "unitPrice": 1.8180303030303029,
+    "category": "price-50-100-pln"
+  },
+  {
+    "name": "Pudełko z klockami",
+    "price": 124.99,
+    "pieces": 65,
+    "unitPrice": 1.9229230769230767,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Alfabetowe miasto",
+    "price": 214.99,
+    "pieces": 87,
+    "unitPrice": 2.4711494252873565,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Pudełko z klockami Deluxe",
+    "price": 214.99,
+    "pieces": 85,
+    "unitPrice": 2.529294117647059,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Pudełko w kształcie klocka z autami i ciężarówkami",
+    "price": 214.99,
+    "pieces": 80,
+    "unitPrice": 2.6873750000000003,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Pierwszy raz: Wizyta u lekarza",
+    "price": 174.99,
+    "pieces": 65,
+    "unitPrice": 2.6921538461538463,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Bolidy i kierowcy F1®",
+    "price": 189.99,
+    "pieces": 70,
+    "unitPrice": 2.7141428571428574,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Dom rodzinny 3 w 1",
+    "price": 599.99,
+    "pieces": 218,
+    "unitPrice": 2.7522477064220183,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Domek na drzewie 3 w 1",
+    "price": 389.99,
+    "pieces": 126,
+    "unitPrice": 3.0951587301587304,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Opieka nad zwierzętami na farmie",
+    "price": 234.99,
+    "pieces": 74,
+    "unitPrice": 3.1755405405405406,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Urodzinowy domek Peppy",
+    "price": 189.99,
+    "pieces": 59,
+    "unitPrice": 3.2201694915254238,
+    "category": "price-100-200-pln"
+  },
+  {
+    "name": "Mój świat XL",
+    "price": 1549.99,
+    "pieces": 480,
+    "unitPrice": 3.2291458333333334,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Ludziki z emocjami",
+    "price": 234.99,
+    "pieces": 71,
+    "unitPrice": 3.309718309859155,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Magiczny podwodny pałac Arielki",
+    "price": 389.99,
+    "pieces": 116,
+    "unitPrice": 3.3619827586206896,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zestaw LEGO® Education SPIKE™ Essential",
+    "price": 1699.99,
+    "pieces": 449,
+    "unitPrice": 3.786169265033408,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Rodziny dzikich zwierząt 3 w 1",
+    "price": 349.99,
+    "pieces": 92,
+    "unitPrice": 3.804239130434783,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Wesołe miasteczko",
+    "price": 219.99,
+    "pieces": 53,
+    "unitPrice": 4.150754716981132,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Zestaw LEGO® Education SPIKE™ Prime",
+    "price": 2249.99,
+    "pieces": 528,
+    "unitPrice": 4.261344696969696,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Peppa i supermarket",
+    "price": 299.99,
+    "pieces": 70,
+    "unitPrice": 4.285571428571429,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Przygoda w promie kosmicznym 3 w 1",
+    "price": 279.99,
+    "pieces": 58,
+    "unitPrice": 4.827413793103449,
+    "category": "price-200-500-pln"
+  },
+  {
+    "name": "Pociąg towarowy",
+    "price": 549.99,
+    "pieces": 105,
+    "unitPrice": 5.238,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Duży interaktywny pociąg miejski",
+    "price": 599.99,
+    "pieces": 103,
+    "unitPrice": 5.8251456310679615,
+    "category": "price-over-500-pln"
+  },
+  {
+    "name": "Przygoda z interaktywnym pociągiem",
+    "price": 349.99,
+    "pieces": 57,
+    "unitPrice": 6.140175438596492,
+    "category": "price-200-500-pln"
+  }
+]

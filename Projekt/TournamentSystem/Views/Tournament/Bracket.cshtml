@@ -1,0 +1,128 @@
+@model TournamentSystem.ViewModels.TournamentDetailsViewModel
+
+@{
+    ViewData["Title"] = "Drabinka turnieju";
+    var rounds = Model.Matches
+        .GroupBy(m => m.Round)
+        .OrderBy(g => g.Key)
+        .ToList();
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-warning">@TempData["ErrorMessage"]</div>
+}
+
+
+<h2>Drabinka turnieju: @Model.Tournament.Name</h2>
+
+<div class="bracket-container">
+    @foreach (var round in rounds)
+    {
+        <div class="bracket-round">
+            <h4>Runda @round.Key</h4>
+            @foreach (var match in round)
+            {
+                @if(round.Key!=1 || match.Player1?.Id!=null)
+                {
+                    <div class="bracket-match">
+                    
+                        <div class="player @((match.WinnerId!=null && match.WinnerId == match.Player1Id) ? "winner" : "")">
+                            @match.Player1?.UserName
+                        </div>
+                        @if (match.Player2?.Id!=null)
+                        {
+                            <div class="vs">vs</div>
+                            <div class="player @((match.WinnerId!=null && match.WinnerId == match.Player2Id) ? "winner" : "")">
+                                @match.Player2?.UserName
+                            </div>
+                        }
+                    </div>
+                }
+                    
+                
+                @if (User.Identity.IsAuthenticated &&
+                    (User.Identity.Name == match.Player1?.UserName || User.Identity.Name == match.Player2?.UserName) &&
+                    match.WinnerId == null &&
+                    match.Player1Id != null && match.Player2Id != null)
+                {
+                    <form asp-action="ReportResult" method="post">
+                        <input type="hidden" name="matchId" value="@match.Id" />
+                        <label>Wybierz zwycięzcę:</label>
+                        <select name="winnerId" class="form-control">
+                            <option value="@match.Player1Id">@match.Player1?.UserName</option>
+                            <option value="@match.Player2Id">@match.Player2?.UserName</option>
+                        </select>
+                        <button type="submit" class="btn btn-sm btn-primary mt-1">Zgłoś wynik</button>
+                    </form>
+                }
+
+            }
+        </div>
+    }
+</div>
+
+<style>
+.bracket-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+}
+.bracket-round {
+    flex: 0 0 auto;
+    min-width: 200px;
+}
+.bracket-round h4 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.bracket-match {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+.player {
+    padding: 5px;
+}
+.winner {
+    font-weight: bold;
+    background-color: #d4edda;
+}
+.vs {
+    text-align: center;
+    margin: 5px 0;
+    font-style: italic;
+}
+</style>
+
+<a asp-action="Details" asp-route-id="@Model.Tournament.Id" class="btn btn-secondary mt-3">← Powrót do turnieju</a>
+
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.0/signalr.min.js"></script>
+    <script>
+        const tournamentId = @Model.Tournament.Id;
+
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/matchHub")
+            .build();
+
+        connection.on("bracketUpdated", function (tid) {
+            if (tid === tournamentId) {
+                console.log("Drabinka zaktualizowana – odświeżam widok.");
+                location.reload(); // lub AJAX, jeśli chcesz dynamicznie wstrzykiwać
+            }
+        });
+
+        connection.start().then(function () {
+            connection.invoke("JoinBracketGroup", tournamentId);
+        });
+
+        window.addEventListener("beforeunload", function () {
+            connection.invoke("LeaveBracketGroup", tournamentId);
+        });
+    </script>
+}
