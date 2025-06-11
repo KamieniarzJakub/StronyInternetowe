@@ -86,7 +86,6 @@ public class AccountController : Controller
                 $"Kliknij w link, aby potwierdzić konto: <a href='{confirmationLink}'>Potwierdź email</a><br/>" +
                 $"Link jest ważny 24 godziny.");
 
-            // Przekieruj na stronę z info o wysłaniu maila, przekazując returnUrl, by ją zachować
             return RedirectToAction(nameof(RegisterConfirmation), new { returnUrl });
         }
 
@@ -119,7 +118,6 @@ public class AccountController : Controller
 
         if (result.Succeeded)
         {
-            // Po potwierdzeniu przekieruj na returnUrl jeśli jest lokalny, albo domyślnie na Home
             if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
                 return Redirect(returnUrl);
 

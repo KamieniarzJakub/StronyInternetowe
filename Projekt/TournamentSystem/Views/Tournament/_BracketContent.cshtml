@@ -1,6 +1,6 @@
 @model TournamentSystem.ViewModels.TournamentDetailsViewModel
 @using Microsoft.AspNetCore.Identity
-@inject UserManager<ApplicationUser> UserManager // Wstrzyknij UserManager
+@inject UserManager<ApplicationUser> UserManager
 
 @{
     string currentUserId = null;
@@ -20,9 +20,8 @@
                 @if (round.Key != 1 || match.Player1?.Id != null)
                 {
                     <div class="bracket-match">
-                        @* Wyświetlanie gracza 1 i wskaźnik głosu/zwycięzcy *@
                         <div class="player @((match.WinnerId != null && match.WinnerId == match.Player1Id) ? "winner" :
-                                            (currentUserId != null && match.WinnerId == null && // Tylko jeśli nie ma ustalonego zwycięzcy
+                                            (currentUserId != null && match.WinnerId == null &&
                                              ((currentUserId == match.Player1Id && match.Player1ReportedWinnerId == match.Player1Id) ||
                                               (currentUserId == match.Player2Id && match.Player2ReportedWinnerId == match.Player1Id))
                                              ? "your-vote" : ""))">
@@ -31,20 +30,17 @@
                         @if (match.Player2?.Id != null)
                         {
                             <div class="vs">vs</div>
-                            @* Wyświetlanie gracza 2 i wskaźnik głosu/zwycięzcy *@
                             <div class="player @((match.WinnerId != null && match.WinnerId == match.Player2Id) ? "winner" :
-                                                (currentUserId != null && match.WinnerId == null && // Tylko jeśli nie ma ustalonego zwycięzcy
+                                                (currentUserId != null && match.WinnerId == null &&
                                                  ((currentUserId == match.Player1Id && match.Player1ReportedWinnerId == match.Player2Id) ||
                                                   (currentUserId == match.Player2Id && match.Player2ReportedWinnerId == match.Player2Id))
                                                  ? "your-vote" : ""))">
                                 @match.Player2?.UserName
                             </div>
                         }
-
-                        @* Formularz zgłaszania wyników *@
                         @if (User.Identity.IsAuthenticated &&
                             (currentUserId == match.Player1?.Id || currentUserId == match.Player2?.Id) &&
-                            match.WinnerId == null && // Formularz widoczny tylko, jeśli mecz nie ma jeszcze zwycięzcy
+                            match.WinnerId == null &&
                             match.Player1Id != null && match.Player2Id != null)
                         {
                             <form asp-action="ReportResult" method="post">
@@ -71,7 +67,6 @@
     }
 </div>
 
-@* Wszelkie style CSS dla drabinki powinny być tutaj lub w pliku globalnym *@
 <style>
     .bracket-container {
         display: flex;
@@ -94,31 +89,21 @@
         border-radius: 8px;
         background: #f9f9f9;
     }
+
     .player {
-        padding: 5px;
+    padding: 5px;
     }
+
     .winner {
-        font-weight: bold;
-        background-color: #d4edda; /* Jasnozielony dla zwycięzcy */
+    font-weight: bold;
+    background-color: #d4edda;
+    /* Jasnozielony dla zwycięzcy */
     }
+
     .your-vote {
-        background-color: #add8e6; /* Jasnoniebieski dla Twojego głosu */
-        border: 1px solid #6cb6d1;
-        font-weight: bold;
-    }
-    .vs {
-        text-align: center;
-        margin: 5px 0;
-        font-style: italic;
-    }
-    .match-status-message {
-        margin-top: 10px;
-        padding: 8px;
-        border-radius: 5px;
-        font-size: 0.9em;
-        background-color: #fff3cd;
-        border: 1px solid #ffeeba;
-        color: #856404;
-        font-weight: bold;
+    background-color: #add8e6;
+    /* Jasnoniebieski dla Twojego głosu */
+    border: 1px solid #6cb6d1;
+    font-weight: bold;
     }
 </style>

@@ -18,7 +18,8 @@ a[b-qsf9wkdupp] {
   border-color: #1861ac;
 }
 
-.nav-pills .nav-link.active[b-qsf9wkdupp], .nav-pills .show > .nav-link[b-qsf9wkdupp] {
+.nav-pills .nav-link.active[b-qsf9wkdupp],
+.nav-pills .show>.nav-link[b-qsf9wkdupp] {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
@@ -27,6 +28,7 @@ a[b-qsf9wkdupp] {
 .border-top[b-qsf9wkdupp] {
   border-top: 1px solid #e5e5e5;
 }
+
 .border-bottom[b-qsf9wkdupp] {
   border-bottom: 1px solid #e5e5e5;
 }
@@ -46,4 +48,55 @@ button.accept-policy[b-qsf9wkdupp] {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+}
+
+
+
+.player[b-qsf9wkdupp] {
+  padding: 5px;
+}
+
+.winner[b-qsf9wkdupp] {
+  font-weight: bold;
+  background-color: #d4edda;
+  /* Jasnozielony dla zwycięzcy */
+}
+
+.your-vote[b-qsf9wkdupp] {
+  background-color: #add8e6;
+  /* Jasnoniebieski dla Twojego głosu */
+  border: 1px solid #6cb6d1;
+  font-weight: bold;
+}
+
+.vs[b-qsf9wkdupp] {
+  text-align: center;
+  margin: 5px 0;
+  font-style: italic;
+}
+
+.match-status-message[b-qsf9wkdupp] {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  color: #856404;
+  font-weight: bold;
+}
+
+.round-container[b-qsf9wkdupp] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.match-card[b-qsf9wkdupp] {
+  border: 1px solid #ddd;
+  padding: 12px;
+  width: 220px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
 }

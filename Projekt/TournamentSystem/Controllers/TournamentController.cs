@@ -35,7 +35,7 @@ namespace TournamentSystem.Controllers
 
             foreach (var t in upcomingTournamentsToUpdate)
             {
-                await TryGenerateLadder(t.Id); // lub tylko t.Status = TournamentStatus.Active;
+                await TryGenerateLadder(t.Id);
             }
 
             var query = _context.Tournaments
@@ -166,18 +166,6 @@ namespace TournamentSystem.Controllers
         {
             tournament.OrganizerId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            if (!ModelState.IsValid)
-            {
-                foreach (var key in ModelState.Keys)
-                {
-                    var state = ModelState[key];
-                    foreach (var error in state.Errors)
-                    {
-                        Console.WriteLine($"Field: {key}, Error: {error.ErrorMessage}");
-                    }
-                }
-            }
-
             if (ModelState.IsValid)
             {
                 if (tournament.Date < DateTime.Now)
@@ -294,8 +282,8 @@ namespace TournamentSystem.Controllers
         public async Task<IActionResult> Apply(int id)
         {
             var tournament = await _context.Tournaments
-        .Include(t => t.Participants)
-        .FirstOrDefaultAsync(t => t.Id == id);
+                .Include(t => t.Participants)
+                .FirstOrDefaultAsync(t => t.Id == id);
             if (tournament == null) return NotFound();
 
             if (tournament.Participants.Count >= tournament.MaxParticipants)
@@ -321,7 +309,6 @@ namespace TournamentSystem.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Apply(ApplyViewModel model)
         {
-            Console.WriteLine("🟢 POST Apply triggered");
             Console.WriteLine($"Model: License={model.LicenseNumber}, Ranking={model.Ranking}");
 
             var tournament = await _context.Tournaments
@@ -330,27 +317,22 @@ namespace TournamentSystem.Controllers
 
             if (tournament == null)
             {
-                Console.WriteLine("❌ Tournament not found");
                 return NotFound();
             }
 
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            Console.WriteLine($"UserId: {userId}");
 
             if (tournament.Participants.Any(p => p.UserId == userId))
             {
-                Console.WriteLine("⚠️ User already signed up");
                 ModelState.AddModelError("", "Jesteś już zapisany na ten turniej.");
             }
 
             if (tournament.Participants.Count >= tournament.MaxParticipants)
             {
-                Console.WriteLine("⚠️ Tournament full");
                 ModelState.AddModelError("", "Limit uczestników został osiągnięty.");
             }
             if (DateTime.Now > tournament.ApplicationDeadline)
             {
-                TempData["ErrorMessage"] = "Zapisy do turnieju zostały zakończone.";
                 return RedirectToAction("Details", new { id = model.TournamentId });
             }
 
@@ -360,20 +342,17 @@ namespace TournamentSystem.Controllers
 
             if (licenseExists)
             {
-                Console.WriteLine("⚠️ License already used");
                 ModelState.AddModelError("LicenseNumber", "Ten numer licencji jest już używany.");
             }
 
             if (rankingExists)
             {
-                Console.WriteLine("⚠️ Ranking already used");
                 ModelState.AddModelError("Ranking", "Ten ranking jest już przypisany innemu uczestnikowi.");
             }
 
             if (!ModelState.IsValid)
             {
                 model.TournamentName = tournament.Name;
-                Console.WriteLine("❌ Model is invalid");
                 foreach (var key in ModelState.Keys)
                 {
                     foreach (var error in ModelState[key].Errors)
@@ -394,7 +373,6 @@ namespace TournamentSystem.Controllers
 
             _context.Participants.Add(participant);
             await _context.SaveChangesAsync();
-            Console.WriteLine("✅ Participant added successfully");
 
             return RedirectToAction("Details", new { id = tournament.Id });
         }
@@ -440,7 +418,6 @@ namespace TournamentSystem.Controllers
             }
             var now = DateTime.Now;
 
-            // Initialize the ViewModel
             var viewModel = new MyTournamentsViewModel();
 
             // 1. Get Organized Tournaments
@@ -490,7 +467,6 @@ namespace TournamentSystem.Controllers
                 }
             }
             
-            // Sort UpcomingMatches if necessary, e.g., by tournament date then by round
             viewModel.UpcomingMatches = viewModel.UpcomingMatches
                                         .OrderBy(m => m.Tournament.Date)
                                         .ThenBy(m => m.Round)
@@ -576,9 +552,9 @@ namespace TournamentSystem.Controllers
                         bool hasWinner = !string.IsNullOrEmpty(match.WinnerId);
 
                         if (hasWinner)
-                            continue; // już awansowany
+                            continue;
 
-                        if ((hasP1 ^ hasP2)) // dokładnie jeden gracz
+                        if (hasP1 ^ hasP2) // dokładnie jeden gracz
                         {
                             string winner = hasP1 ? match.Player1Id! : match.Player2Id!;
                             match.WinnerId = winner;
@@ -603,7 +579,6 @@ namespace TournamentSystem.Controllers
                 }
             }
 
-            // Awansuj automatycznie wolnych graczy
             AdvanceByes();
 
             await _context.SaveChangesAsync();
@@ -688,21 +663,13 @@ namespace TournamentSystem.Controllers
                 return NotFound();
 
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            // Sprawdzamy czy user jest uczestnikiem tego meczu
+            
             if (userId != match.Player1Id && userId != match.Player2Id)
                 return Forbid();
 
-            // Sprawdzamy czy winnerId jest jednym z graczy
             if (winnerId != match.Player1Id && winnerId != match.Player2Id)
                 return BadRequest("Wybrany zwycięzca nie uczestniczy w tym meczu.");
 
-            // Zapisujemy wynik zgłoszony przez użytkownika (tu musimy dodać mechanizm potwierdzania obu graczy)
-
-            // Załóżmy, że w Match dodajemy:
-            // string? ConfirmedWinnerId; // zatwierdzony wynik
-            // List<ResultSubmission> ResultSubmissions; // lista zgłoszeń wyników użytkowników
-
-            // Sprawdź czy user już zgłosił wynik
             var existingSubmission = await _context.ResultSubmissions
                 .FirstOrDefaultAsync(rs => rs.MatchId == matchId && rs.UserId == userId);
 
@@ -741,10 +708,10 @@ namespace TournamentSystem.Controllers
                     match.WinnerId = player1Submission.WinnerId;
                     _context.Matches.Update(match);
 
-                    // Usuwamy zgłoszenia wyników (bo wynik jest zatwierdzony)
+                    // Usuwamy zgłoszenia wyników
                     _context.ResultSubmissions.RemoveRange(submissions);
 
-                    // Aktualizuj drabinkę (tworzenie kolejnej rundy itd.)
+                    // Aktualizuj drabinkę
                     await UpdateTournamentLadderAfterMatch(match.TournamentId);
 
                     // Sprawdź, czy to był ostatni mecz ostatniej rundy
@@ -857,7 +824,7 @@ namespace TournamentSystem.Controllers
                     _context.Matches.Add(newMatch);
                     nextRoundMatches.Add(newMatch);
                 }
-                await _context.SaveChangesAsync(); // zapisujemy nowe mecze
+                await _context.SaveChangesAsync();
             }
 
             // Wypełnij mecze zwycięzcami
@@ -911,13 +878,13 @@ namespace TournamentSystem.Controllers
         }
 
        [HttpPost]
-        [ValidateAntiForgeryToken] // Zalecane dla akcji POST
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> ReportResult(int matchId, string winnerId)
         {
             var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var match = await _context.Matches
-                .Include(m => m.Tournament) // Zawsze ładuj turniej, aby mieć dostęp do jego ID
-                .Include(m => m.Player1) // Załaduj graczy, aby mieć dostęp do UserName
+                .Include(m => m.Tournament)
+                .Include(m => m.Player1)
                 .Include(m => m.Player2)
                 .FirstOrDefaultAsync(m => m.Id == matchId);
 
@@ -941,7 +908,6 @@ namespace TournamentSystem.Controllers
                 return RedirectToAction("Bracket", new { id = match.TournamentId });
             }
 
-            // Ustaw zgłoszonego zwycięzcę w zależności od tego, kto zgłasza
             if (currentUserId == match.Player1Id)
             {
                 match.Player1ReportedWinnerId = winnerId;
@@ -961,10 +927,7 @@ namespace TournamentSystem.Controllers
                     match.WinnerId = match.Player1ReportedWinnerId;
                     match.DiscrepancyMessage = null; // Usuń komunikat o niezgodności, jeśli wcześniej istniał
 
-                    // --- Logika awansowania zwycięzcy do następnej rundy ---
                     var nextRound = match.Round + 1;
-
-                    // Pobierz wszystkie mecze z kolejnej rundy tego turnieju
                     var nextRoundMatches = await _context.Matches
                         .Where(m => m.TournamentId == match.TournamentId && m.Round == nextRound)
                         .ToListAsync();
@@ -972,7 +935,7 @@ namespace TournamentSystem.Controllers
                     // Oblicz numer meczu w kolejnej rundzie, do którego ma trafić zwycięzca
                     var allMatchesInCurrentRound = await _context.Matches
                         .Where(m => m.TournamentId == match.TournamentId && m.Round == match.Round)
-                        .OrderBy(m => m.Id) // Upewnij się, że kolejność jest spójna
+                        .OrderBy(m => m.Id)
                         .ToListAsync();
 
                     int currentMatchIndex = allMatchesInCurrentRound.FindIndex(m => m.Id == match.Id);
@@ -996,18 +959,17 @@ namespace TournamentSystem.Controllers
                     }
                     else
                     {
-                        // Dodaj zwycięzcę do meczu w kolejnej rundzie
-                        if (currentMatchIndex % 2 == 0) // Jeśli to lewa strona pary
+                        // Dodaj zwycięzcę lewa strona
+                        if (currentMatchIndex % 2 == 0)
                         {
                             nextMatch.Player1Id = winnerId;
                         }
-                        else // Jeśli to prawa strona pary
+                        else // Prawa strona
                         {
                             nextMatch.Player2Id = winnerId;
                         }
-                        _context.Matches.Update(nextMatch); // Zaktualizuj kolejny mecz w bazie
+                        _context.Matches.Update(nextMatch);
                     }
-                    // --- Koniec Logiki awansowania zwycięzcy ---
                 }
                 else
                 {
@@ -1022,8 +984,6 @@ namespace TournamentSystem.Controllers
             }
             else
             {
-                // Tylko jeden gracz zgłosił wynik, czekamy na drugiego
-                // Ustaw komunikat o statusie meczu, aby był widoczny dla obu graczy
                 match.DiscrepancyMessage = "Oczekiwanie na drugi głos"; 
             }
 

@@ -1,13 +1,12 @@
 @model TournamentSystem.ViewModels.TournamentDetailsViewModel
 @using Microsoft.AspNetCore.Identity
-@inject UserManager<ApplicationUser> UserManager // Inject UserManager
+@inject UserManager<ApplicationUser> UserManager
 
 @{
     var returnUrl = Context.Request.Path + Context.Request.QueryString;
 }
 
 @functions {
-    // This GetEmbedMapUrl logic is from your working version
     public string GetEmbedMapUrl(string url)
     {
         if (string.IsNullOrEmpty(url))
@@ -27,15 +26,13 @@
 }
 
 @{
-    ViewData["Title"] = "Szczegóły turnieju"; // Changed from "Tournament Details"
+    ViewData["Title"] = "Szczegóły turnieju";
     var embedMapUrl = GetEmbedMapUrl(Model.Tournament.Location);
 
-    // Get the organizer's username to display
     var organizerUser = await UserManager.FindByIdAsync(Model.Tournament.OrganizerId);
     var organizerUserName = organizerUser?.UserName ?? "Nieznany organizator";
 }
 
-@* TempData Messages *@
 @if (TempData["ErrorMessage"] != null)
 {
     <div class="alert alert-danger">
@@ -62,7 +59,7 @@
         <p><strong>Lokalizacja:</strong> @Model.Tournament.Location</p>
         <p><strong>Maksymalna liczba uczestników:</strong> @Model.Tournament.MaxParticipants</p>
         <p><strong>Wolne miejsca:</strong> @Model.FreeSpots</p>
-        <p><strong>Organizator:</strong> @organizerUserName</p> @* Display organizer's username *@
+        <p><strong>Organizator:</strong> @organizerUserName</p>
 
         @if (!string.IsNullOrWhiteSpace(Model.Tournament.SponsorLogos))
         {
@@ -115,7 +112,7 @@
     </div>
 </div>
 
-@* Sections below the two columns *@
+@* Bottom section *@
 <hr />
 
 <h4 style="margin-top:50px;">Uczestnicy (@Model.Participants.Count)</h4>
@@ -126,7 +123,6 @@
     }
 </ul>
 
-@* Action Buttons (below participants) *@
 @if (Model.Tournament.Status == TournamentSystem.Models.TournamentStatus.Upcoming)
 {
     if (User.Identity.IsAuthenticated)
@@ -211,13 +207,13 @@ else
         const tournamentId = @Model.Tournament.Id;
 
         const connection = new signalR.HubConnectionBuilder()
-            .withUrl("/matchHub") // Use the same SignalR Hub
+            .withUrl("/matchHub")
             .build();
 
         // Listen for the "tournamentStatusUpdated" event
         connection.on("tournamentStatusUpdated", function (tid) {
             if (tid === tournamentId) {
-                console.log("Tournament status updated – refreshing details view.");
+                console.log("Tournament status updated - refreshing details view.");
                 location.reload(); // Refresh the entire tournament details page
             }
         });

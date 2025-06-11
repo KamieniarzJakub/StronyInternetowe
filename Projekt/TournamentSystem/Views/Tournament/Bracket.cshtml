@@ -7,11 +7,9 @@
 }
 
 
-@* Nowy kontener dla głównej treści drabinki, który otrzyma dynamiczny margines *@
 <div id="mainContent">
     <h2>Drabinka turnieju: @Model.Tournament.Name</h2>
 
-    @* Placeholder dla zawartości drabinki, która będzie odświeżana dynamicznie *@
     <div id="bracketContentPlaceholder">
         @await Html.PartialAsync("_BracketContent", Model)
     </div>
@@ -24,16 +22,12 @@
     <script>
         const tournamentId = @Model.Tournament.Id;
         const bracketContentPlaceholder = document.getElementById('bracketContentPlaceholder');
-        const mainContent = document.getElementById('mainContent'); // Pobierz nowy element mainContent
-        const fixedAlerts = document.querySelector('.fixed-top-alerts'); // Pobierz kontener z alertami
+        const mainContent = document.getElementById('mainContent');
+        const fixedAlerts = document.querySelector('.fixed-top-alerts');
 
-        // Funkcja do dynamicznego dostosowywania marginesu górnego głównej treści
         function adjustMainContentMargin() {
             if (fixedAlerts && mainContent) {
-                // Oblicz rzeczywistą wysokość kontenera z alertami
                 const alertsHeight = fixedAlerts.offsetHeight;
-                // Ustaw margines górny dla głównej treści, dodając trochę dodatkowego odstępu
-                // Tak, aby treść nie zakrywała pasków nawigacji i alertów
                 mainContent.style.marginTop = `${alertsHeight + 20}px`; 
             }
         }

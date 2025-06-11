@@ -11,7 +11,7 @@
 <h3>🎮 Twoje Nadchodzące Mecze</h3>
 @if (Model.UpcomingMatches != null && Model.UpcomingMatches.Any())
 {
-    @Html.Partial("_MatchTable", Model.UpcomingMatches)
+    @await Html.PartialAsync("_MatchTable", Model.UpcomingMatches)
 }
 else
 {
@@ -23,7 +23,7 @@ else
 <h3>🔜 Nadchodzące turnieje (Uczestnik)</h3>
 @if (Model.Upcoming != null && Model.Upcoming.Any())
 {
-    @Html.Partial("_TournamentTable", Model.Upcoming)
+    @await Html.PartialAsync("_TournamentTable", Model.Upcoming)
 }
 else
 {
@@ -35,7 +35,7 @@ else
 <h3>🏁 Aktywne turnieje (Uczestnik)</h3>
 @if (Model.Active != null && Model.Active.Any())
 {
-    @Html.Partial("_TournamentTable", Model.Active)
+    @await Html.PartialAsync("_TournamentTable", Model.Active)
 }
 else
 {
@@ -47,7 +47,7 @@ else
 <h3>⏳ Zakończone turnieje (Uczestnik)</h3>
 @if (Model.Past != null && Model.Past.Any())
 {
-    @Html.Partial("_TournamentTable", Model.Past)
+    @await Html.PartialAsync("_TournamentTable", Model.Past)
 }
 else
 {
@@ -59,7 +59,7 @@ else
 <h3>🧑‍💼 Organizowane turnieje</h3>
 @if (Model.Organized != null && Model.Organized.Any())
 {
-    @Html.Partial("_TournamentTable", Model.Organized)
+    @await Html.PartialAsync("_TournamentTable", Model.Organized)
 }
 else
 {
