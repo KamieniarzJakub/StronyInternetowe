@@ -150,7 +150,7 @@
         if (Model.IsOrganizer)
         {
             <a asp-action="Edit" asp-route-id="@Model.Tournament.Id" class="btn btn-warning me-2">Edytuj turniej</a>
-            <form asp-action="GenerateLadder" asp-route-id="@Model.Tournament.Id" method="post" class="d-inline-block">
+            <form asp-action="GenerateLadder" asp-route-id="@Model.Tournament.Id" method="post" class="d-inline-block" onsubmit="return confirmGenerateLadder();">
                 <button type="submit" class="btn btn-primary">
                     Rozpocznij turniej i wygeneruj drabinkę
                 </button>
@@ -201,6 +201,11 @@ else
 </a>
 
 @section Scripts {
+    <script>
+        function confirmGenerateLadder() {
+            return confirm("Czy na pewno chcesz rozpocząć turniej i wygenerować drabinkę? Tej operacji nie można cofnąć.");
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.0/signalr.min.js"></script>
     <script>
         const tournamentId = @Model.Tournament.Id;
